@@ -6,3 +6,8 @@ def home(request):
 
     return TemplateResponse(request, 'index.html', {'data': data})
 
+
+def favourites(request):
+    data = Reading.objects.last() # .last() so that you get the most current results
+
+    return TemplateResponse(request, 'favourites.html', {'data': data})
