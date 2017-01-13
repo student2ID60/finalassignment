@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="icon" href="../../favicon.ico">
+    <!--<link rel="icon" href="../../favicon.ico">-->
 
     <!-- <link rel="stylesheet" href="{% static "assets/css/main.css" %}"/> -->
 
@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="{% static "assets/css/sticky-footer-navbar.css" %}"/>
 </head>
 <body>
-<section id="header" class="dark">
 
     <!-- Fixed tabs -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -40,7 +39,7 @@
     </nav>
 
 
-        <!-- Begin page content -->
+    <!-- Begin page content -->
     <div class="container">
       <div class="row">
         <div class="col-xs-2 col-md-2"></div>
@@ -74,6 +73,8 @@
       </div>
     </footer>
 
+    <!--
+    <section id="header" class="dark">
     <div>
         <h1>Weather Station  <img src="{{ data.icon_url }}"/></h1>
     </div>
@@ -88,7 +89,9 @@
             <li>{{ data.observation_time }}</li>
         </ul>
     </div>
+
 </section>
+-->
 
 <!-- Scripts -->
 <script src="{% static "assets/js/jquery.min.js" %}"></script>
