@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'finalassignment.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'finalassignmentdb',
-        'USER': 'postgres',
-        'PASSWORD': 'w8woord',
-        'HOST': '',
-        'PORT': '',
+        'NAME': 'd3enlk294pbi15',
+        'USER': 'tleawaslframmo',
+        'PASSWORD': '6f347648c1a4b2a5aeb99ef699a0aba2d4f4a64d614b68c6159e180dc2b60e3e',
+        'HOST': 'ec2-107-22-236-252.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 

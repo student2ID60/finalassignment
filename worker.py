@@ -22,7 +22,7 @@ def fetch_data():
 
     #open db
     try:
-        conn = psycopg2.connect(dbname='finalassignmentdb', user='postgres', host='localhost', password='w8woord')
+        conn = psycopg2.connect(dbname='d3enlk294pbi15', user='tleawaslframmo', host='ec2-107-22-236-252.compute-1.amazonaws.com', password='6f347648c1a4b2a5aeb99ef699a0aba2d4f4a64d614b68c6159e180dc2b60e3e')
         print('Opened DB successfully')
     except:
         print(datetime.now(), "Unable to connect to the database")
