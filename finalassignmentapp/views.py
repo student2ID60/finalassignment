@@ -20,8 +20,9 @@ def favourites(request):
 def userView(request):
     if request.method == 'POST': # If the forms has been sumbitted
 
+
         form = UserForm(request.POST)
-        if form.is_valid(): # All validation rules pass
+        if True: #form.is_valid(): # All validation rules pass
             usernaam = request.POST.get('username', '')
             wachtwoord = request.POST.get('password', '')
             ingelogd = True
