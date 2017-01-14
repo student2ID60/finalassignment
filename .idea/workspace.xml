@@ -65,14 +65,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+            <state relative-caret-position="308">
+              <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="e#2721#3186#0#HTML" expanded="false" />
                 <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6115#6121#0#HTML" expanded="true" />
-                <element signature="e#6177#6789#0#HTML" expanded="false" />
+                <element signature="e#6194#6200#0#HTML" expanded="true" />
+                <element signature="e#6256#6868#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -692,7 +692,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="django-line">
           <url>file://$PROJECT_DIR$/templates/index.html</url>
-          <line>172</line>
+          <line>173</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -768,8 +768,8 @@
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#2721#3186#0#HTML" expanded="false" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6115#6121#0#HTML" expanded="true" />
-            <element signature="e#6177#6789#0#HTML" expanded="false" />
+            <element signature="e#6194#6200#0#HTML" expanded="true" />
+            <element signature="e#6256#6868#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -948,14 +948,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="88" column="32" lean-forward="false" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        <state relative-caret-position="308">
+          <caret line="90" column="13" lean-forward="true" selection-start-line="90" selection-start-column="13" selection-end-line="90" selection-end-column="13" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="e#2721#3186#0#HTML" expanded="false" />
             <element signature="n#style#0;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6115#6121#0#HTML" expanded="true" />
-            <element signature="e#6177#6789#0#HTML" expanded="false" />
+            <element signature="e#6194#6200#0#HTML" expanded="true" />
+            <element signature="e#6256#6868#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
