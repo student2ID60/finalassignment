@@ -66,8 +66,8 @@ def index(request):
             return HttpResponseRedirect('favourites.html')  # Redirect after POST
 
         else:
-            # HttpResponse('Username already in use, try another one')
-        
+            HttpResponse('Username already in use, try another one')
+
     else:
         form = UserForm()  # An unbound form
 
