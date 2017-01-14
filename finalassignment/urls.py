@@ -22,6 +22,6 @@ urlpatterns = [
     url(r'^$', finalassignmentapp.views.userView, name='index'),
     #url(r'^index.html$', finalassignmentapp.views.home, name='home'),
     url(r'^index.html$', finalassignmentapp.views.userView, name='index'),
-    url(r'^lists/$', finalassignmentapp.views.lists, name='lists'),
+    url(r'^lists.html$', finalassignmentapp.views.lists, name='lists'),
     url(r'^favourites.html$', finalassignmentapp.views.favourites, name='favourites'),
 ]

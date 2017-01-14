@@ -44,7 +44,9 @@
     <div class="container">
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
-        <!--<form  action="index.html" method="post">
+    </div>
+
+    <!--<form  action="index.html" method="post">
           <div class="container">
             <label>Username</label>
             <input type = "text" placeholder = "Username" name = "username" required> <br>
@@ -53,17 +55,16 @@
             <button type = "button" class = "btn btn-primary"> Login </button>
           </div>
         </form>-->
-
-        <form  action="../index.html" method="post"> {% csrf_token %}
-          <div class="container">
-            <label>Set Username: </label>
-            <input type = "text" placeholder = "Username" name = "username" required> <br>
-            <label>Set Password: </label>
-            <input type = "password" placeholder = "Password" name = "password" required> <br>
-            <input type = "submit" value="Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
-          </div>
-        </form>
-    </div>
+    
+    <form  action="../index.html" method="post"> {% csrf_token %}
+      <div class="container">
+        <label>Set Username: </label>
+        <input type = "text" placeholder = "Username" name = "username" required> <br>
+        <label>Set Password: </label>
+        <input type = "password" placeholder = "Password" name = "password" required> <br>
+        <input type = "submit" value="Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+      </div>
+    </form>
 
     <footer class="footer">
       <div class="container">
