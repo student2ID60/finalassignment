@@ -58,7 +58,6 @@
     <div class="container tab-content tab-content-home">
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
-        <p>Logged in as: {{ data.us_name }}</p>
     </div>
 
     <!--
@@ -74,6 +73,7 @@
     -->
 
     <div class="container login-area">
+        <p>Logged in as: {{ data.us_name }}</p>
         <p>To use this web app, you should login with your username and password.</p>
         <p>If you don't have an account, fill in a username and password and press sign up to create one.</p>
         <form  action="../index.html" method="post"> {% csrf_token %}
