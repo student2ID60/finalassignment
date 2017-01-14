@@ -65,7 +65,7 @@
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
     </div>
-    
+
 
     <!-- Login area -->
     <!--
@@ -81,14 +81,15 @@
     -->
 
     <script type="text/javascript">
-        if ("{{ data.us_name }}" === "") {
-            $("#login-area").show();
+        /*if ("{{ data.us_name }}" === "") {
+            $(".login-area").show();
         } else {
-            $("#login-area").hide();
-        }
+            $(".login-area").hide();
+        }*/
+        $(".login-area").hide();
     </script>
 
-    <div class="container" id="login-area">
+    <div class="container login-area">
         <p>To use this web app, you should login with your username and password.</p>
         <p>If you don't have an account, fill in a username and password and press sign up to create one.</p>
         <form  action="../index.html" method="post"> {% csrf_token %}
