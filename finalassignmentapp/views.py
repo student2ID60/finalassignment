@@ -49,7 +49,7 @@ def userView(request):
         #cur.execute("SELECT us_password FROM finalassignmentapp_users WHERE us_name=%s", username)
         username_exists = cur.fetchone()
 
-        current_user = {'id': 0, 'us_name': 'admin', 'us_password': 'admin', 'us_loggedin': False}
+        current_user = {'id': 0, 'us_name': '', 'us_password': '', 'us_loggedin': False}
 
         if username_exists is None:
             # write data to database
@@ -73,12 +73,10 @@ def userView(request):
         })
 
 def favourites(request):
-    data = Reading.objects.last()  # .last() so that you get the most current results
-
-    return TemplateResponse(request, 'favourites.html', {'data': data})
+    current_user = Users.objects.last()  # niet zo netjes
+    return TemplateResponse(request, 'favourites.html', {'data': current_user})
 
 def lists(request):
-    data = Reading.objects.last()  # .last() so that you get the most current results
-
-    return TemplateResponse(request, 'lists.html', {'data': data})
+    current_user = Users.objects.last()  # niet zo netjes
+    return TemplateResponse(request, 'lists.html', {'data': current_user})
 

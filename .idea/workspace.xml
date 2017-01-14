@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97ba116-1737-4c7a-bad1-99545d033f26" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalassignmentapp/views.py" afterPath="$PROJECT_DIR$/finalassignmentapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/lists.html" afterPath="$PROJECT_DIR$/templates/lists.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,15 +50,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="498">
-              <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
+            <state relative-caret-position="424">
+              <caret line="79" column="57" lean-forward="true" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1484420757212" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
-                <marker date="1484420757212" expanded="true" signature="2075:2195" ph="INSERT INTO finalassignmentapp_users... " />
+                <marker date="1484421563451" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
+                <marker date="1484421563451" expanded="true" signature="2065:2185" ph="INSERT INTO finalassignmentapp_users... " />
               </folding>
             </state>
           </provider>
@@ -65,11 +67,11 @@
       <file leaf-file-name="lists.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/lists.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="792">
-              <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
+            <state relative-caret-position="418">
+              <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#2775#2781#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2949#2955#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="374">
               <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
               <folding>
                 <element signature="e#2847#2853#0#HTML" expanded="true" />
@@ -167,10 +169,10 @@
         <option value="$PROJECT_DIR$/templates/supermarkets.html" />
         <option value="$PROJECT_DIR$/finalassignmentapp/forms.py" />
         <option value="$PROJECT_DIR$/finalassignmentapp/models.py" />
-        <option value="$PROJECT_DIR$/templates/lists.html" />
         <option value="$PROJECT_DIR$/finalassignment/urls.py" />
-        <option value="$PROJECT_DIR$/finalassignmentapp/views.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/templates/lists.html" />
+        <option value="$PROJECT_DIR$/finalassignmentapp/views.py" />
       </list>
     </option>
   </component>
@@ -672,8 +674,8 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484420757212" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
-            <marker date="1484420757212" expanded="true" signature="2075:2195" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484421563451" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
+            <marker date="1484421563451" expanded="true" signature="2065:2185" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
@@ -824,17 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/lists.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="69" column="37" lean-forward="false" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="37" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#2775#2781#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finalassignment/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
@@ -845,25 +836,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="65" column="33" lean-forward="true" selection-start-line="65" selection-start-column="33" selection-end-line="65" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484420757212" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
-            <marker date="1484420757212" expanded="true" signature="2075:2195" ph="INSERT INTO finalassignmentapp_users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="374">
           <caret line="47" column="10" lean-forward="true" selection-start-line="47" selection-start-column="10" selection-end-line="47" selection-end-column="10" />
           <folding>
             <element signature="e#2847#2853#0#HTML" expanded="true" />
             <element signature="e#2909#3521#0#HTML" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/lists.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2949#2955#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="79" column="57" lean-forward="true" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1484421563451" expanded="true" signature="1604:1669" ph="SELECT us_pa... finalassignmentapp_users" />
+            <marker date="1484421563451" expanded="true" signature="2065:2185" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
