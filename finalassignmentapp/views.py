@@ -63,7 +63,7 @@ def userView(request):
         cur.close()
         conn.close()
 
-        return TemplateResponse(request, '../index.html', {'data': current_user})
+        return TemplateResponse(request, 'index.html', {'data': current_user})
         #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
     else:
