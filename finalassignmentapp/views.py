@@ -25,7 +25,7 @@ def favourites(request):
 
     return TemplateResponse(request, 'favourites.html', {'data': data})
 
-def index(request):
+def userView(request):
     if request.method == 'POST': # If the forms has been sumbitted
 
 
