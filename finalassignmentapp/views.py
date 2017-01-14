@@ -64,7 +64,7 @@ def userView(request):
             return HttpResponseRedirect('../favourites.html')  # Redirect after POST
 
         else:
-            HttpResponse('Username already in use, try another one')
+            return HttpResponse('Username already in use, try another one')
 
     else:
         form = UserForm()  # An unbound form
