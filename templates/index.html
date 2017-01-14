@@ -39,7 +39,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Grocery Manager</a>
+          <a id="tab-home" class="navbar-brand" href="#">Grocery Manager</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -62,7 +62,7 @@
     </div>
 
     <!--
-    <div class="container">
+    <div class="container login-area">
         <form  action="index.html" method="post">
             <label>Username</label>
             <input type = "text" placeholder = "Username" name = "username" required> <br>
@@ -73,14 +73,16 @@
     </div>
     -->
 
-    <div class="container">
+    <div class="container login-area">
+        <p>To use this web app, you should login with your username and password.</p>
+        <p>If you don't have an account, fill in a username and password and press sign up to create one.</p>
         <form  action="../index.html" method="post"> {% csrf_token %}
           <div class="container">
             <label>Set Username: </label>
             <input type = "text" placeholder = "Username" name = "username" required> <br>
             <label>Set Password: </label>
             <input type = "password" placeholder = "Password" name = "password" required> <br>
-            <input type = "submit" value="Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+            <input type = "submit" value = "Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
           </div>
         </form>
     </div>

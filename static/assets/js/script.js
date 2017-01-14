@@ -7,7 +7,8 @@ $(document).ready(function() {
     // show selected tab content
     $("#tab-home").click(function() {
         $(".tab-item").removeClass("active");
-        $("#tab-home").addClass("active");
+        /* when there is no home tab (title used for this), comment out this line:
+        $("#tab-home").addClass("active");*/
         $(".tab-content").hide();
         $(".tab-content-home").show();
     });
