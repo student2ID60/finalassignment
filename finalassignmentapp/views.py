@@ -49,6 +49,8 @@ def userView(request):
         #cur.execute("SELECT us_password FROM finalassignmentapp_users WHERE us_name=%s", username)
         username_exists = cur.fetchone()
 
+        current_user = {'id': 0, 'us_name': 'admin', 'us_password': 'admin', 'us_loggedin': False}
+
         if username_exists is None:
             # write data to database
             cur.execute("""INSERT INTO finalassignmentapp_users (us_name, us_password, us_loggedin)
@@ -56,13 +58,13 @@ def userView(request):
                         (username, password, loggedin))
             conn.commit()
             print("Data Written", datetime.now())
-        else:
-            return HttpResponse('Username already in use, try another one')
+            current_user = Users.objects.last()  # niet zo netjes
 
         cur.close()
         conn.close()
 
-        return HttpResponseRedirect('../lists.html')  # Redirect after POST
+        return TemplateResponse(request, '../index.html', {'data': current_user})
+        #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
     else:
         form = UserForm()  # An unbound form
