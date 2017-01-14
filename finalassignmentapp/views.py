@@ -6,6 +6,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from finalassignmentapp.forms import UserForm
 from finalassignmentapp.models import Users
 
+import requests
 import psycopg2
 import psycopg2.extras
 from datetime import datetime
