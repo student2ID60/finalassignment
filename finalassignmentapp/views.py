@@ -63,7 +63,11 @@ def index(request):
 
             print("Data Written", datetime.now())
 
-            return HttpResponseRedirect(reverse('index.html'))  # Redirect after POST
+            return HttpResponseRedirect('favourites.html')  # Redirect after POST
+
+        else:
+            # HttpResponse('Username already in use, try another one')
+        
     else:
         form = UserForm()  # An unbound form
 
