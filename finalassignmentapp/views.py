@@ -27,7 +27,7 @@ def userView(request):
             user_obj = Users(us_name = usernaam, us_password = wachtwoord, us_loggedin = ingelogd)
             user_obj.save()
 
-            #return HttpResponseRedirect(reverse('index')) # Redirect after POST
+            return HttpResponseRedirect(reverse('finalassignment:index.html')) # Redirect after POST
     else:
         form = UserForm() # An unbound form
 
