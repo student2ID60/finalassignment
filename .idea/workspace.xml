@@ -61,15 +61,15 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+            <state relative-caret-position="198">
+              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1484413820887" expanded="true" signature="1795:1853" ph="SELECT * fro... finalassignmentapp_users" />
-                <marker date="1484413820887" expanded="true" signature="1795:1854" ph="SELECT COUNT... finalassignmentapp_users" />
-                <marker date="1484413820887" expanded="true" signature="1795:1856" ph="SELECT COUNT... finalassignmentapp_users" />
-                <marker date="1484413820887" expanded="true" signature="1795:1871" ph="SELECT COUNT... finalassignmentapp_users" />
-                <marker date="1484413820887" expanded="true" signature="2014:2134" ph="INSERT INTO finalassignmentapp_users... " />
+                <marker date="1484413935184" expanded="true" signature="1795:1856" ph="SELECT * fro... finalassignmentapp_users" />
+                <marker date="1484413935184" expanded="true" signature="1795:1857" ph="SELECT COUNT... finalassignmentapp_users" />
+                <marker date="1484413935184" expanded="true" signature="1795:1859" ph="SELECT COUNT... finalassignmentapp_users" />
+                <marker date="1484413935184" expanded="true" signature="1795:1874" ph="SELECT COUNT... finalassignmentapp_users" />
+                <marker date="1484413935184" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
               </folding>
             </state>
           </provider>
@@ -573,7 +573,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13802083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@finalassignment" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12048193" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@finalassignment" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17743702" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -661,11 +661,11 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484413820887" expanded="true" signature="1795:1853" ph="SELECT * fro... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1854" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1856" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1871" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="2014:2134" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484413935184" expanded="true" signature="1795:1856" ph="SELECT * fro... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1857" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1859" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1874" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
@@ -833,15 +833,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="52" column="40" lean-forward="true" selection-start-line="52" selection-start-column="40" selection-end-line="52" selection-end-column="40" />
+        <state relative-caret-position="198">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484413820887" expanded="true" signature="1795:1853" ph="SELECT * fro... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1854" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1856" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="1795:1871" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413820887" expanded="true" signature="2014:2134" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484413935184" expanded="true" signature="1795:1856" ph="SELECT * fro... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1857" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1859" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="1795:1874" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413935184" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
