@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.template.response import TemplateResponse
 from finalassignmentapp.models import Reading
+from django.http import HttpResponseRedirect, HttpResponse
 
 from finalassignmentapp.forms import UserForm
 from finalassignmentapp.models import Users
@@ -26,7 +27,7 @@ def userView(request):
             usernaam = request.POST.get('username', '')
             wachtwoord = request.POST.get('password', '')
             ingelogd = True
-            user_obj = Users(us_name = usernaam, us_password = wachtwoord, us_loggedin = ingelogd)
+            user_obj = Users(us_name=usernaam, us_password=wachtwoord, us_loggedin=ingelogd)
             user_obj.save()
 
             return HttpResponseRedirect(reverse('finalassignment:index.html')) # Redirect after POST
