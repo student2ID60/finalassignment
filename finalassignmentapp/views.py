@@ -49,7 +49,7 @@ def userView(request):
         else:
             cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        cur.execute("SELECT COUNT(*) FROM finalassignmentapp_users WHERE us_name = %s" % (username))
+        cur.execute("SELECT us_password FROM finalassignmentapp_users WHERE us_name=%s", (username),)
         username_exists = cur.fetchone()
 
         if username_exists is None:
@@ -64,7 +64,6 @@ def userView(request):
 
         cur.close()
         conn.close()
-
 
         return HttpResponseRedirect('../favourites.html')  # Redirect after POST
 
