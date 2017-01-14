@@ -6,6 +6,11 @@ from django.http import HttpResponseRedirect, HttpResponse
 from finalassignmentapp.forms import UserForm
 from finalassignmentapp.models import Users
 
+import psycopg2
+import psycopg2.extras
+from datetime import datetime
+import logging
+
 
 def home(request):
     data = Reading.objects.last() # .last() so that you get the most current results
