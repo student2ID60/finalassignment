@@ -21,6 +21,6 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls), this could be used for the django admin console to add and remove data to the database
     url(r'^$', finalassignmentapp.views.home, name='home'),
     url(r'^index.html$', finalassignmentapp.views.home, name='home'),
-    url(r'^supermarkets.html$', finalassignmentapp.views.userView, name='userView'),
+    url(r'^index.html$', finalassignmentapp.views.userView, name='userView'),
     url(r'^favourites.html$', finalassignmentapp.views.favourites, name='favourites'),
 ]

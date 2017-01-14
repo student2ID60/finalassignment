@@ -75,7 +75,7 @@
       </div>
     </form>-->
 
-    <form  action="supermarkets.html" method="post"> {% csrf_token %}
+    <form  action="{% url 'userView' %}" method="post"> {% csrf_token %}
       <div class="container">
         <label>Set Username: </label>
         <input type = "text" placeholder = "Username" name = "username" required> <br>
