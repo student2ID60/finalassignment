@@ -19,12 +19,6 @@ def home(request):
 
     return TemplateResponse(request, 'index.html', {'data': data})
 
-
-def favourites(request):
-    data = Reading.objects.last()  # .last() so that you get the most current results
-
-    return TemplateResponse(request, 'favourites.html', {'data': data})
-
 def userView(request):
     if request.method == 'POST':  # If the forms has been sumbitted
 
@@ -75,3 +69,14 @@ def userView(request):
         return render(request, 'index.html', {
             'form': form,
         })
+
+def favourites(request):
+    data = Reading.objects.last()  # .last() so that you get the most current results
+
+    return TemplateResponse(request, 'favourites.html', {'data': data})
+
+def lists(request):
+    data = Reading.objects.last()  # .last() so that you get the most current results
+
+    return TemplateResponse(request, 'lists.html', {'data': data})
+
