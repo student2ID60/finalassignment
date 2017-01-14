@@ -15,27 +15,25 @@ import logging
 
 
 def home(request):
-    data = Reading.objects.last() # .last() so that you get the most current results
+    data = Reading.objects.last()  # .last() so that you get the most current results
 
     return TemplateResponse(request, 'index.html', {'data': data})
 
 
 def favourites(request):
-    data = Reading.objects.last() # .last() so that you get the most current results
+    data = Reading.objects.last()  # .last() so that you get the most current results
 
     return TemplateResponse(request, 'favourites.html', {'data': data})
 
 def userView(request):
-    if request.method == 'POST': # If the forms has been sumbitted
-
-
+    if request.method == 'POST':  # If the forms has been sumbitted
 
         form = UserForm(request.POST)
-        if True: #form.is_valid(): # All validation rules pass
-            usernaam = request.POST.get('username', '')
-            wachtwoord = request.POST.get('password', '')
-            ingelogd = True
-            #user_obj = Users(us_name=usernaam, us_password=wachtwoord, us_loggedin=ingelogd)
+        if form.is_valid():  # All validation rules pass
+            username = request.POST.get('username', '')
+            password = request.POST.get('password', '')
+            loggedin = True
+            #user_obj = Users(us_name=username, us_password=password, us_loggedin=loggedin)
             #user_obj.save()
 
 
@@ -55,7 +53,7 @@ def userView(request):
             # write data to database
             cur.execute("""INSERT INTO finalassignmentapp_users (us_name, us_password, us_loggedin)
                             VALUES (%s, %s, %s)""",
-                        (usernaam, wachtwoord, ingelogd))
+                        (username, password, loggedin))
 
             conn.commit()
             cur.close()
