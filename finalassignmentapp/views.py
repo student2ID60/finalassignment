@@ -68,7 +68,7 @@ def userView(request):
         cur.close()
         conn.close()
 
-        return HttpResponseRedirect('../favourites.html')  # Redirect after POST
+        return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
     else:
         form = UserForm()  # An unbound form

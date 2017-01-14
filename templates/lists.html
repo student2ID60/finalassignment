@@ -40,51 +40,36 @@
 
 
     <!-- Begin page content -->
-
-    <!--<form  action="index.html" method="post">
-      <div class="container">
-        <label>Username</label>
-        <input type = "text" placeholder = "Username" name = "username" required> <br>
-        <label>Password</label>
-        <input type = "password" placeholder = "Password" name = "password" required> <br>
-        <button type = "button" class = "btn btn-primary"> Login </button>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-2 col-md-2"></div>
+        <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
+        <div class="col-xs-2 col-md-2"></div>
       </div>
-    </form>-->
+    </div>
 
-    <form  action="/index/" method="post"> {% csrf_token %}
-      <div class="container">
-        <label>Set Username: </label>
-        <input type = "text" placeholder = "Username" name = "username" required> <br>
-        <label>Set Password: </label>
-        <input type = "password" placeholder = "Password" name = "password" required> <br>
-        <input type = "submit" value="Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-8 col-md-8"><p>xD</p></div>
+        <div class="col-xs-2 col-md-2"><p>xD</p></div>
+        <div class="col-xs-2 col-md-2"><p>xD</p></div>
       </div>
-    </form>
+      <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
+    </div>
+
+    <div class="container" style = "width: 50%" >
+      <div class="row">
+        <div class="col-xs-2 col-md-2"></div>
+        <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Save list </button></div>
+        <div class="col-xs-2 col-md-2"></div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">
         <p class="text-muted"> &copy; Le Grocery Manager</p>
       </div>
     </footer>
-
-    <!--
-    <section id="header" class="dark">
-        <div>
-            <h1>Weather Station  <img src="{{ data.icon_url }}"/></h1>
-        </div>
-        <div>
-            <ul>
-                <li>Location - {{ data.location }}</li>
-                <li>Currently - {{ data.weather }}</li>
-                <li>Wind - {{ data.wind_str }}</li>
-                <li>Temp - {{ data.temp }} F</li>
-                <li>Humidity - {{ data.humidity }}</li>
-                <li>Precipitation - {{ data.precip }}</li>
-                <li>{{ data.observation_time }}</li>
-            </ul>
-        </div>
-    </section>
-    -->
 
 <!-- Scripts -->
 <script src="{% static "assets/js/jquery.min.js" %}"></script>
