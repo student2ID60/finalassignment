@@ -53,13 +53,21 @@
     </nav>
 
 
-    <!-- Begin page content -->
+    <!-- Show login status -->
+    <div class="container">
+        <p>Logged in as: {{ data.us_name }}</p>
+    </div>
+
+
+    <!-- Home -->
 
     <div class="container tab-content tab-content-home">
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
     </div>
+    
 
+    <!-- Login area -->
     <!--
     <div class="container login-area">
         <form  action="index.html" method="post">
@@ -72,8 +80,15 @@
     </div>
     -->
 
-    <div class="container login-area">
-        <p>Logged in as: {{ data.us_name }}</p>
+    <script type="text/javascript">
+        if ("{{ data.us_name }}" === "") {
+            $("#login-area").show();
+        } else {
+            $("#login-area").hide();
+        }
+    </script>
+
+    <div class="container" id="login-area">
         <p>To use this web app, you should login with your username and password.</p>
         <p>If you don't have an account, fill in a username and password and press sign up to create one.</p>
         <form  action="../index.html" method="post"> {% csrf_token %}
@@ -86,6 +101,7 @@
           </div>
         </form>
     </div>
+
 
     <!-- Lists -->
 
