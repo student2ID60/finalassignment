@@ -75,7 +75,7 @@
       </div>
     </form>-->
 
-    <form  action="index.html" method="post">
+    <form  action="index.html" method="post"> {% csrf_token %}
       <div class="container">
         <label>Set Username</label>
         <input type = "text" placeholder = "Username" name = "username" required> <br>
