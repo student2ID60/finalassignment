@@ -10,3 +10,7 @@ class Reading(models.Model):
     precip = models.CharField(max_length=50)
     icon_url = models.URLField()
     observation_time = models.CharField(max_length=100)
+
+class Users(models.Model):
+    username = models.CharField(max_length=100)
+    password = models.CharField(max_length=100)
