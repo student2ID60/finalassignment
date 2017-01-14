@@ -42,6 +42,8 @@
     <!-- Begin page content -->
 
     <div class="container">
+        <h1>Welcome!</h1>
+        <p>For lists, favourites, etc. see the tabs ;)</p>
         <!--<form  action="index.html" method="post">
           <div class="container">
             <label>Username</label>
@@ -52,7 +54,7 @@
           </div>
         </form>-->
 
-        <form  action="/index/" method="post"> {% csrf_token %}
+        <form  action="../index.html" method="post"> {% csrf_token %}
           <div class="container">
             <label>Set Username: </label>
             <input type = "text" placeholder = "Username" name = "username" required> <br>
