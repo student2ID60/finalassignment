@@ -33,8 +33,8 @@ def userView(request):
             usernaam = request.POST.get('username', '')
             wachtwoord = request.POST.get('password', '')
             ingelogd = True
-            #user_obj = Users(us_name=usernaam, us_password=wachtwoord, us_loggedin=ingelogd)
-            #user_obj.save()
+            user_obj = Users(us_name=usernaam, us_password=wachtwoord, us_loggedin=ingelogd)
+            user_obj.save()
 
 
             # open db
