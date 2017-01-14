@@ -49,7 +49,7 @@ def userView(request):
         else:
             cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-        cur.execute("""SELECT COUNT from finalassignmentapp_users WHERE us_name = %s""", (username))
+        cur.execute("""SELECT COUNT from finalassignmentapp_users WHERE us_name = (%s)""", (username))
         username_exists = cur.fetchone()
 
         if username_exists is None:

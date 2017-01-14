@@ -62,12 +62,12 @@
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="286">
-              <caret line="58" column="34" lean-forward="false" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+              <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1484413073244" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
-                <marker date="1484413073244" expanded="true" signature="1797:1858" ph="SELECT COUNT... finalassignmentapp_users" />
-                <marker date="1484413073244" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
+                <marker date="1484413233986" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
+                <marker date="1484413233986" expanded="true" signature="1797:1860" ph="SELECT COUNT... finalassignmentapp_users" />
+                <marker date="1484413233986" expanded="true" signature="2019:2139" ph="INSERT INTO finalassignmentapp_users... " />
               </folding>
             </state>
           </provider>
@@ -659,9 +659,9 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484413073244" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
-            <marker date="1484413073244" expanded="true" signature="1797:1858" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413073244" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484413233986" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
+            <marker date="1484413233986" expanded="true" signature="1797:1860" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413233986" expanded="true" signature="2019:2139" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
@@ -830,12 +830,12 @@
     <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="58" column="34" lean-forward="false" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
+          <caret line="58" column="55" lean-forward="true" selection-start-line="58" selection-start-column="55" selection-end-line="58" selection-end-column="55" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484413073244" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
-            <marker date="1484413073244" expanded="true" signature="1797:1858" ph="SELECT COUNT... finalassignmentapp_users" />
-            <marker date="1484413073244" expanded="true" signature="2017:2137" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484413233986" expanded="true" signature="1797:1855" ph="SELECT * fro... finalassignmentapp_users" />
+            <marker date="1484413233986" expanded="true" signature="1797:1860" ph="SELECT COUNT... finalassignmentapp_users" />
+            <marker date="1484413233986" expanded="true" signature="2019:2139" ph="INSERT INTO finalassignmentapp_users... " />
           </folding>
         </state>
       </provider>
