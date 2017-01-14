@@ -73,7 +73,7 @@ def userView(request):
         })
 
 def favourites(request):
-    current_user = Users.objects.last()  # niet zo netjes
+    current_user = {'id': self.data.id, 'us_name': '', 'us_password': '', 'us_loggedin': False}
     return TemplateResponse(request, 'favourites.html', {'data': current_user})
 
 def lists(request):
