@@ -64,10 +64,10 @@ def index(request):
             print("Data Written", datetime.now())
 
 
-            return HttpResponseRedirect(reverse('finalassignmentapp:index.html')) # Redirect after POST
+            return HttpResponseRedirect('index.html') # Redirect after POST
     else:
-        form = UserForm() # An unbound form
+        form = UserForm()  # An unbound form
 
     return render(request, 'index.html', {
-        'form' : form,
+        'form': form,
     })
