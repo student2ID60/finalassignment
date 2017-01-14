@@ -12,5 +12,7 @@ class Reading(models.Model):
     observation_time = models.CharField(max_length=100)
 
 class Users(models.Model):
-    username = models.CharField(max_length=100)
-    password = models.CharField(max_length=100)
+    us_name = models.CharField(max_length=64, default='')
+    us_password = models.CharField(max_length=64, default='')
+    us_loggedin = models.BooleanField(default=False)
+
