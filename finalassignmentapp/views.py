@@ -52,7 +52,7 @@ def index(request):
                 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
             # write data to database
-            cur.execute("""INSERT INTO finalassignmentapp_users (us_name, us_password, us_loggedin,)
+            cur.execute("""INSERT INTO finalassignmentapp_users (us_name, us_password, us_loggedin)
                             VALUES (%s, %s, %s)""",
                         (usernaam, wachtwoord, ingelogd))
 
