@@ -66,7 +66,7 @@
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
-              <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+              <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -80,8 +80,8 @@
                 <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#6620#6626#0#HTML" expanded="true" />
-                <element signature="e#6682#7294#0#HTML" expanded="false" />
+                <element signature="e#6624#6630#0#HTML" expanded="true" />
+                <element signature="e#6686#7298#0#HTML" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -779,8 +779,8 @@
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6620#6626#0#HTML" expanded="true" />
-            <element signature="e#6682#7294#0#HTML" expanded="false" />
+            <element signature="e#6624#6630#0#HTML" expanded="true" />
+            <element signature="e#6686#7298#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -960,7 +960,7 @@
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -974,8 +974,8 @@
             <element signature="n#div#5;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6620#6626#0#HTML" expanded="true" />
-            <element signature="e#6682#7294#0#HTML" expanded="false" />
+            <element signature="e#6624#6630#0#HTML" expanded="true" />
+            <element signature="e#6686#7298#0#HTML" expanded="false" />
           </folding>
         </state>
       </provider>
