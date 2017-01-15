@@ -47,7 +47,9 @@
                 $("#tab-lists").addClass("active");
                 $(".tab-content").hide();
                 $(".tab-content-lists").show();
+                $("#form-new-list").hide();
                 checkLogin();
+
             }
 
             // first only show home content
@@ -57,7 +59,6 @@
 
             if("{{ tab }}" === "lists") {
                 showLists();
-                $("#form-new-list").hide();
             }
 
             // show selected tab content

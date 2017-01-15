@@ -85,7 +85,12 @@ def userView(request):
             })
             #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
+
         elif command == "make_list":
+
+            username = request.POST.get('username')
+            
+
             message = "make list gelukt"
 
             return TemplateResponse(request, 'index.html', {
