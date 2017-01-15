@@ -93,6 +93,7 @@ def userView(request):
 
             username = request.POST.get('username')
             listname = request.POST.get('listname')
+            listid = 0
 
             # open database
             try:
@@ -119,20 +120,19 @@ def userView(request):
                             (listname, username))
                 conn.commit()
                 print("Data Written", datetime.now())
-
-                message = "made list: " + listname
-
+                listid = listname_exists[0]
+                message = "Made list with id: " + str(listid)
             else:
                 message = "You already made a list with this name, try another name"
 
             cur.close()
             conn.close()
 
-
             return TemplateResponse(request, 'index.html', {
                 'username': request.POST.get('username'),
                 'make_list_message': message,
                 'tab': 'lists',
+                'list': listid,
             })
 
 
