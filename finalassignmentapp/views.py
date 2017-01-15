@@ -63,7 +63,7 @@ def userView(request):
         else :
             required_password = username_exists[0];
             if password == required_password:
-                stmt = "UPDATE finalassignmentapp_users SET us_loggedin=True WHERE us_name=%s"
+                stmt = "UPDATE finalassignmentapp_users SET us_loggedin=TRUE WHERE us_name=%s"
                 params = (username,)
                 cur.execute(stmt,params)
                 current_user = Users.objects.filter(us_name=username).first();
