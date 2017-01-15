@@ -66,13 +66,13 @@ def userView(request):
             else :
                 required_password = username_exists[0];
                 if password == required_password:
-                    stmt = "UPDATE finalassignmentapp_users SET us_loggedin='1' WHERE us_name=%s"
+                    stmt = "UPDATE finalassignmentapp_users SET us_loggedin=TRUE WHERE us_name=%s"
                     params = (username,)
                     cur.execute(stmt,params)
                     conn.commit()
                     current_user = Users.objects.filter(us_name=username).first();
                 else:
-                    message = "Wrong password"
+                    message = "Wrong password for chosen username, try again"
 
 
             cur.close()
@@ -90,7 +90,7 @@ def userView(request):
 
             return TemplateResponse(request, 'index.html', {
                 'username': request.POST.get('username'),
-                'login_message': message,
+                'make_list_message': message,
                 'tab': 'lists',
             })
 
