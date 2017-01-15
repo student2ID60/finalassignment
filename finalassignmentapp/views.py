@@ -79,7 +79,7 @@ def userView(request):
             conn.close()
 
             return TemplateResponse(request, 'index.html', {
-                'username': current_user.us_name,
+                'username': current_user['us_name'],
                 'data': current_user,
                 'login_message': message,
             })
