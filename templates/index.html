@@ -48,7 +48,7 @@
                 $(".tab-content").hide();
                 $(".tab-content-lists").show();
                 $("#form-new-list").hide();
-                if("{{ listid }}" === ""){
+                if("{{ list }}" === ""){
                     $("#current-list").hide();
                 } else {
                     $("#current-list").show();
@@ -199,7 +199,7 @@
             </form>
 
             <p>{{ make_list_message }}</p>
-            <p>{{ listid }}</p>
+            <p>{{ list }}</p>
 
             <br>
 
