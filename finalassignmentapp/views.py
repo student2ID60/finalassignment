@@ -22,6 +22,7 @@ def home(request):
 def userView(request):
     if request.method == 'POST':  # If the forms has been sumbitted
 
+        message = ""
         form = UserForm(request.POST)
 
         username = request.POST.get('username', '')
@@ -46,7 +47,6 @@ def userView(request):
         stmt = "SELECT us_password FROM finalassignmentapp_users WHERE us_name=%s"
         params = (username,)
         cur.execute(stmt,params)
-        #cur.execute("SELECT us_password FROM finalassignmentapp_users WHERE us_name=%s", username)
         username_exists = cur.fetchone()
 
         current_user = {'id': 0, 'us_name': '', 'us_password': '', 'us_loggedin': False}
@@ -60,10 +60,21 @@ def userView(request):
             print("Data Written", datetime.now())
             current_user = Users.objects.last()  # niet zo netjes
 
+        else :
+            required_password = username_exists[0];
+            if password == required_password:
+                current_user = Users.objects.filter(us_name=username)
+                stmt = "UPDATE finalassignmentapp_users SET us_loggedin=True WHERE us_name=%s"
+                params = (username,)
+                cur.execute(stmt,params)
+            else:
+                message = "Wrong password"
+
+
         cur.close()
         conn.close()
 
-        return TemplateResponse(request, 'index.html', {'data': current_user})
+        return TemplateResponse(request, 'index.html', {'data': current_user, 'login_message': message})
         #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
     else:

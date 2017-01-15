@@ -145,14 +145,15 @@
       <p>Please log in to access the content of the grocery manager.</p>
       <p>Don't have an account yet? Create one by setting a username and a password below!</p>
       <form  action="../index.html" method="post"> {% csrf_token %}
-        <div class="container col-centered">
-          <label>Set Username: </label>
-          <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required> <br>
-          <label>Set Password: </label>
-          <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required> <br>
-          <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
-          <input type = "submit" value = "Sign up" class = "btn btn-primary"/>
-        </div>
+          <div class="container col-centered">
+              <label>Set Username: </label>
+              <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required>
+              <p id="password_message">{{ login_message }}</p>
+              <label>Set Password: </label>
+              <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required> <br>
+              <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+              <input type = "submit" value = "Sign up" class = "btn btn-primary"/>
+          </div>
       </form>
     </div>
 
