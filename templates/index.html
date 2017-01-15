@@ -88,10 +88,11 @@
             function checkLogin() {
                 if ("{{ data.us_name }}" === "") {
                     $(".logged-in-content").hide();
-                /*} else {
-                    $(".logged-in-content").show();*/
+                    $(".login-area").show();
+                } else {
+                    $(".logged-in-content").show();
+                    $(".login-area").hide();
                 }
-                /*$(".login-area").hide();*/
             }
             
             // first only show home content
