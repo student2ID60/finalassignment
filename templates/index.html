@@ -108,34 +108,44 @@
     <!-- Lists -->
 
     <div class="container tab-content tab-content-lists">
-        <h1>Welcome!</h1>
-        <p>For lists, favourites, etc. see the tabs ;)</p>
-        <p>Logged in as: {{ data.us_name }}</p>
-    </div>
+        <div class="row">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
+            <div class="col-xs-2 col-md-2"></div>
+        </div>
+        <br>
+        <div class="titles row">
+            <div class="col-xs-6 col-md-6 col-centered"><h5>Product:</h5></div>
+            <div class="col-xs-2 col-md-2 col-centered"><h5>Amount:</h5></div>
+            <div class="col-xs-4 col-md-4 col-centered"></div>
+        </div>
 
-    <div class="container  tab-content tab-content-lists">
-      <div class="row">
-        <div class="col-xs-2 col-md-2"></div>
-        <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
-        <div class="col-xs-2 col-md-2"></div>
-      </div>
-    </div>
+        <form action = "listscript">
+            <div class="producttable">
+                <div class = "row">
+                    <div class="col-xs-6 col-md-6 col-centered">
+                        <input class = "inputtext" type = "text" name = "productinput" required>
+                    </div>
+                    <div class="col-xs-2 col-md-2">
+                        <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
+                    </div>
+                    <div class="col-xs-4 col-md-4">
+                        <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container tab-content tab-content-lists">
-      <div class="row">
-        <div class="col-xs-8 col-md-8"><p>xD</p></div>
-        <div class="col-xs-2 col-md-2"><p>xD</p></div>
-        <div class="col-xs-2 col-md-2"><p>xD</p></div>
-      </div>
-      <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
-    </div>
+            <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
+        </form>
 
-    <div class="container tab-content tab-content-lists" style = "width: 50%" >
-      <div class="row">
-        <div class="col-xs-2 col-md-2"></div>
-        <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Save list </button></div>
-        <div class="col-xs-2 col-md-2"></div>
-      </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col-xs-3 col-md-3"></div>
+            <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
+            <div class="col-xs-3 col-md-3"></div>
+        </div>
     </div>
 
 
