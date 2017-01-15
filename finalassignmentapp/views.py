@@ -82,8 +82,10 @@ def userView(request):
 
         elif command == "make_list":
             message = "make list gelukt"
-            return #TemplateResponse(request, 'index.html', {'login_message': message})
-
+            #return TemplateResponse(request, 'index.html', {'login_message': message})
+            return render(request, 'index.html', {
+                'login_message': message,
+            })
 
     else:
         form = UserForm()  # An unbound form

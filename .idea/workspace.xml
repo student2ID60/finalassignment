@@ -26,14 +26,14 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="84" column="68" lean-forward="true" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+            <state relative-caret-position="494">
+              <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
-                <marker date="1484509039502" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
-                <marker date="1484509039502" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
-                <marker date="1484509039502" expanded="true" signature="2673:2743" ph="UPDATE final... " />
-                <marker date="1484509039502" expanded="true" signature="2673:3888" ph="UPDATE final... " />
+                <marker date="1484509339848" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
+                <marker date="1484509339848" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
+                <marker date="1484509339848" expanded="true" signature="2673:2743" ph="UPDATE final... " />
+                <marker date="1484509339848" expanded="true" signature="2673:3995" ph="UPDATE final... " />
               </folding>
             </state>
           </provider>
@@ -734,10 +734,10 @@
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484509039502" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
-            <marker date="1484509039502" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
-            <marker date="1484509039502" expanded="true" signature="2673:2743" ph="UPDATE final... " />
-            <marker date="1484509039502" expanded="true" signature="2673:3888" ph="UPDATE final... " />
+            <marker date="1484509339848" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
+            <marker date="1484509339848" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484509339848" expanded="true" signature="2673:2743" ph="UPDATE final... " />
+            <marker date="1484509339848" expanded="true" signature="2673:3995" ph="UPDATE final... " />
           </folding>
         </state>
       </provider>
@@ -968,14 +968,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="84" column="68" lean-forward="true" selection-start-line="84" selection-start-column="68" selection-end-line="84" selection-end-column="68" />
+        <state relative-caret-position="494">
+          <caret line="87" column="14" lean-forward="true" selection-start-line="87" selection-start-column="14" selection-end-line="87" selection-end-column="14" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484509039502" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
-            <marker date="1484509039502" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
-            <marker date="1484509039502" expanded="true" signature="2673:2743" ph="UPDATE final... " />
-            <marker date="1484509039502" expanded="true" signature="2673:3888" ph="UPDATE final... " />
+            <marker date="1484509339848" expanded="true" signature="1787:1852" ph="SELECT * FRO... finalassignmentapp_users" />
+            <marker date="1484509339848" expanded="true" signature="2176:2300" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484509339848" expanded="true" signature="2673:2743" ph="UPDATE final... " />
+            <marker date="1484509339848" expanded="true" signature="2673:3995" ph="UPDATE final... " />
           </folding>
         </state>
       </provider>
