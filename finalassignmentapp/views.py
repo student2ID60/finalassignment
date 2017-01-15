@@ -109,7 +109,7 @@ def userView(request):
             cur.execute(stmt, params)
             listname_exists = cur.fetchone()
 
-            if username_exists is None:
+            if listname_exists is None:
                 # write data to database
                 cur.execute("""INSERT INTO finalassignmentapp_lists (li_name, li_username)
                                             VALUES (%s, %s)""",
