@@ -56,14 +56,14 @@
 
 
     <!-- Show login status -->
-    <div class="container">
+    <div class="container logged-in-content">
         <p>Logged in as: {{ data.us_name }}</p>
     </div>
 
 
     <!-- Home -->
 
-    <div class="container tab-content tab-content-home">
+    <div class="container logged-in-content tab-content tab-content-home">
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
     </div>
@@ -85,13 +85,11 @@
     <script type="text/javascript">
         $(document).ready(function() {
             if ("{{ data.us_name }}" === "") {
-                /*alert("hoi");*/
-                $(".tab-content").hide();
-            /*} else {
-                $(".login-area").hide();*/
+                $(".logged-in-content").hide();
+            } else {
+                $(".logged-in-content").show();*/
             }
             /*$(".login-area").hide();*/
-            /*document.getElementById("login-area").style.display = "none";*/
         });
     </script>
 
@@ -112,7 +110,7 @@
 
     <!-- Lists -->
 
-    <div class="container tab-content tab-content-lists">
+    <div class="container logged-in-content tab-content tab-content-lists">
         <div class="row">
             <div class="col-xs-2 col-md-2"></div>
             <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
@@ -156,21 +154,21 @@
 
     <!-- Favourites -->
 
-    <div class="container tab-content tab-content-favourites">
+    <div class="container logged-in-content tab-content tab-content-favourites">
       <p> test favourites </p>
     </div>
 
 
     <!-- Recipes -->
 
-    <div class="container tab-content tab-content-recipes">
+    <div class="container logged-in-content tab-content tab-content-recipes">
       <p> test recipes </p>
     </div>
 
 
     <!-- Supermarkets -->
 
-    <div class="container tab-content tab-content-supermarkets">
+    <div class="container logged-in-content tab-content tab-content-supermarkets">
       <p> test supermarkets </p>
     </div>
 
