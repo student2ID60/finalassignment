@@ -83,15 +83,16 @@
     -->
 
     <script type="text/javascript">
-        if ("{{ data.us_name }}" === "") {
-            /*alert("hoi");*/
-            $(".tab-content").hide();
-        /*} else {
-            $(".login-area").hide();*/
-        }
-        /*$(".login-area").hide();*/
-        /*document.getElementById("login-area").style.display = "none";*/
-
+        $(document).ready(function() {
+            if ("{{ data.us_name }}" === "") {
+                /*alert("hoi");*/
+                $(".tab-content").hide();
+            /*} else {
+                $(".login-area").hide();*/
+            }
+            /*$(".login-area").hide();*/
+            /*document.getElementById("login-area").style.display = "none";*/
+        });
     </script>
 
     <div class="container" id="login-area">
