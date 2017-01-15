@@ -33,7 +33,7 @@
         $(document).ready(function() {
 
             function checkLogin() {
-                if ("{{ data.us_name }}" === "") {
+                if ("{{ username }}" === "") {
                     $(".logged-in-content").hide();
                     $(".login-area").show();
                 } else {
@@ -42,10 +42,22 @@
                 }
             }
 
+            function showLists() {
+                $(".tab-item").removeClass("active");
+                $("#tab-lists").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-lists").show();
+                checkLogin();
+            }
+
             // first only show home content
             checkLogin();
             $(".tab-content").hide();
             $(".tab-content-home").show();
+
+            if("{{ tab }}" === "lists") {
+                showLists();
+            }
 
             // show selected tab content
             $("#tab-home").click(function() {
@@ -56,13 +68,7 @@
                 $(".tab-content-home").show();
                 checkLogin();
             });
-            $("#tab-lists").click(function() {
-                $(".tab-item").removeClass("active");
-                $("#tab-lists").addClass("active");
-                $(".tab-content").hide();
-                $(".tab-content-lists").show();
-                checkLogin();
-            });
+            $("#tab-lists").click(showLists());
             $("#tab-favourites").click(function() {
                 $(".tab-item").removeClass("active");
                 $("#tab-favourites").addClass("active");
@@ -118,7 +124,7 @@
 
     <!-- Show login status and logout button -->
     <div class="container logged-in-content">
-        <p>Logged in as: {{ data.us_name }}</p>
+        <p>Logged in as: {{ username }}</p>
         <a class = "btn btn-primary" href="../"> Log out </a>
     </div>
 
@@ -166,7 +172,7 @@
 
                 <form  action="../index.html" method="post"> {% csrf_token %}
                     <input class="inputtext hidden-info" type = "text" name = "command" value="make_list">
-                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
+                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
                     <!--<label>Set List name</label>
                     <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>-->
                     <input type = "submit" value = "Make a new list" class = "btn btn-default"/>

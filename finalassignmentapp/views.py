@@ -66,7 +66,7 @@ def userView(request):
             else :
                 required_password = username_exists[0];
                 if password == required_password:
-                    stmt = "UPDATE finalassignmentapp_users SET us_loggedin='yes' WHERE us_name=%s"
+                    stmt = "UPDATE finalassignmentapp_users SET us_loggedin='1' WHERE us_name=%s"
                     params = (username,)
                     cur.execute(stmt,params)
                     current_user = Users.objects.filter(us_name=username).first();
@@ -77,15 +77,22 @@ def userView(request):
             cur.close()
             conn.close()
 
-            return TemplateResponse(request, 'index.html', {'data': current_user, 'login_message': message})
+            return TemplateResponse(request, 'index.html', {
+                'username': current_user.us_name,
+                'data': current_user,
+                'login_message': message,
+            })
             #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
         elif command == "make_list":
             message = "make list gelukt"
-            #return TemplateResponse(request, 'index.html', {'login_message': message})
-            return render(request, 'index.html', {
+
+            return TemplateResponse(request, 'index.html', {
+                'username': request.POST.get('username'),
                 'login_message': message,
+                'tab': 'lists',
             })
+
 
     else:
         form = UserForm()  # An unbound form
