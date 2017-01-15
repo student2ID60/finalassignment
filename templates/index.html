@@ -42,7 +42,13 @@
                 }
             }
 
-
+            function showLists(){
+                $(".tab-item").removeClass("active");
+                $("#tab-lists").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-lists").show();
+                checkLogin();
+            }
 
             // first only show home content
             checkLogin();
@@ -50,11 +56,7 @@
             $(".tab-content-home").show();
 
             if("{{ tab }}" === "lists") {
-                $(".tab-item").removeClass("active");
-                $("#tab-lists").addClass("active");
-                $(".tab-content").hide();
-                $(".tab-content-lists").show();
-                checkLogin();
+                showLists();
             }
 
             // show selected tab content
@@ -67,11 +69,7 @@
                 checkLogin();
             });
             $("#tab-lists").click(function() {
-                $(".tab-item").removeClass("active");
-                $("#tab-lists").addClass("active");
-                $(".tab-content").hide();
-                $(".tab-content-lists").show();
-                checkLogin();
+                showLists();
             });
             $("#tab-favourites").click(function() {
                 $(".tab-item").removeClass("active");

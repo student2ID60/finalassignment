@@ -69,6 +69,7 @@ def userView(request):
                     stmt = "UPDATE finalassignmentapp_users SET us_loggedin='1' WHERE us_name=%s"
                     params = (username,)
                     cur.execute(stmt,params)
+                    conn.commit()
                     current_user = Users.objects.filter(us_name=username).first();
                 else:
                     message = "Wrong password"
