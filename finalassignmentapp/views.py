@@ -104,18 +104,27 @@ def userView(request):
             else:
                 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
+            stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
+            params = (username,)
+            cur.execute(stmt, params)
+            listname_exists = cur.fetchone()
 
-            # write data to database
-            cur.execute("""INSERT INTO finalassignmentapp_lists (li_name, li_username)
-                                        VALUES (%s, %s)""",
-                        (listname, username))
-            conn.commit()
-            print("Data Written", datetime.now())
+            if username_exists is None:
+                # write data to database
+                cur.execute("""INSERT INTO finalassignmentapp_lists (li_name, li_username)
+                                            VALUES (%s, %s)""",
+                            (listname, username))
+                conn.commit()
+                print("Data Written", datetime.now())
+
+                message = "made list: " + listname
+
+            else:
+                message = "You already made a list with this name, try another name"
 
             cur.close()
             conn.close()
 
-            message = "make list gelukt"
 
             return TemplateResponse(request, 'index.html', {
                 'username': request.POST.get('username'),
