@@ -48,6 +48,11 @@
                 $(".tab-content").hide();
                 $(".tab-content-lists").show();
                 $("#form-new-list").hide();
+                if("{{ listid }}" === ""){
+                    $("#form-new-list").hide();
+                } else {
+                    $("#form-new-list").show();
+                }
                 checkLogin();
             }
 
@@ -197,39 +202,41 @@
 
             <br>
 
-            <div class="titles row">
-                <div class="col-xs-6 col-md-6 "><h5>Product:</h5></div>
-                <div class="col-xs-2 col-md-2 "><h5>Amount:</h5></div>
-                <div class="col-xs-4 col-md-4 col-centered"></div>
-            </div>
-
-            <!-- Product table-->
-            <form action = "listscript">
-                <div class="producttable">
-                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
-                    <div class = "row">
-                        <div class="col-xs-6 col-md-6">
-                            <input class = "inputtext" type = "text" name = "productinput" required>
-                        </div>
-                        <div class="col-xs-2 col-md-2">
-                            <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
-                        </div>
-                        <div class="col-xs-4 col-md-4 col-centered">
-                            <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
-                        </div>
-                    </div>
+            <div id="current-list">
+                <div class="titles row">
+                    <div class="col-xs-6 col-md-6 "><h5>Product:</h5></div>
+                    <div class="col-xs-2 col-md-2 "><h5>Amount:</h5></div>
+                    <div class="col-xs-4 col-md-4 col-centered"></div>
                 </div>
 
-                <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
-            </form>
+                <!-- Product table-->
+                <form action = "listscript">
+                    <div class="producttable">
+                        <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
+                        <div class = "row">
+                            <div class="col-xs-6 col-md-6">
+                                <input class = "inputtext" type = "text" name = "productinput" required>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                                <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
+                            </div>
+                            <div class="col-xs-4 col-md-4 col-centered">
+                                <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+                            </div>
+                        </div>
+                    </div>
 
-            <br>
-            <br>
+                    <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
+                </form>
 
-            <div class="row">
-                <div class="col-xs-3 col-md-3"></div>
-                <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
-                <div class="col-xs-3 col-md-3"></div>
+                <br>
+                <br>
+
+                <div class="row">
+                    <div class="col-xs-3 col-md-3"></div>
+                    <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
+                    <div class="col-xs-3 col-md-3"></div>
+                </div>
             </div>
         </div>
 

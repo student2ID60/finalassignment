@@ -93,7 +93,7 @@ def userView(request):
 
             username = request.POST.get('username')
             listname = request.POST.get('listname')
-            listid = 0
+            listid = ""
 
             # open database
             try:
@@ -124,9 +124,9 @@ def userView(request):
                 stmt = "SELECT id FROM finalassignmentapp_lists WHERE (li_name=%s) AND (li_username=%s)"
                 params = (listname, username,)
                 cur.execute(stmt, params)
-                listid = cur.fetchone()[0]
+                listid = str(cur.fetchone()[0])
 
-                message = "Made list with id: " + str(listid)
+                message = "Made list with id: " + listid
             else:
                 message = "You already made a list with this name, try another name"
 
