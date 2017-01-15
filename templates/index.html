@@ -54,21 +54,17 @@
       </div>
     </nav>
 
-
     <!-- Show login status and logout button -->
     <div class="container logged-in-content">
         <p>Logged in as: {{ data.us_name }}</p>
         <a class = "btn btn-primary" href="../"> Log out </a>
     </div>
 
-
     <!-- Home -->
-
     <div class="container tab-content tab-content-home">
         <h1>Welcome!</h1>
         <p>For lists, favourites, etc. see the tabs ;)</p>
     </div>
-
 
     <!-- Login area -->
     <!--
@@ -82,7 +78,6 @@
         </form>
     </div>
     -->
-
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -138,9 +133,11 @@
                 $(".tab-content-supermarkets").show();
                 checkLogin();
             });
+
+            // always hide this info
+            $(".hidden-info").hide()
         });
     </script>
-
     <div class="container login-area">
         <p>Please log in to access the content of the grocery manager.</p>
         <p>Don't have an account yet? Create one by setting a username and a password below!</p>
@@ -153,14 +150,12 @@
                 <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required>
                 <br>
                 <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
-                <input type = "submit" value = "Sign up" class = "btn btn-primary"/>
+                <input type = "submit" value = "Login/Sign up" class = "btn btn-primary"/>
             </div>
         </form>
     </div>
 
-
     <!-- Lists -->
-
     <div class="container logged-in-content tab-content tab-content-lists">
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
@@ -207,53 +202,26 @@
     </div>
 
     <!-- Favourites -->
-
     <div class="container logged-in-content tab-content tab-content-favourites">
       <p> test favourites </p>
     </div>
 
-
     <!-- Recipes -->
-
     <div class="container logged-in-content tab-content tab-content-recipes">
       <p> test recipes </p>
     </div>
 
-
     <!-- Supermarkets -->
-
     <div class="container logged-in-content tab-content tab-content-supermarkets">
       <p> test supermarkets </p>
     </div>
 
-
     <!-- footer -->
-
     <footer class="footer">
       <div class="container">
         <p class="text-muted"> &copy; Le Grocery Manager</p>
       </div>
     </footer>
-
-    <!--
-    <section id="header" class="dark">
-        <div>
-            <h1>Weather Station  <img src="{{ data.icon_url }}"/></h1>
-        </div>
-        <div>
-            <ul>
-                <li>Location - {{ data.location }}</li>
-                <li>Currently - {{ data.weather }}</li>
-                <li>Wind - {{ data.wind_str }}</li>
-                <li>Temp - {{ data.temp }} F</li>
-                <li>Humidity - {{ data.humidity }}</li>
-                <li>Precipitation - {{ data.precip }}</li>
-                <li>{{ data.observation_time }}</li>
-            </ul>
-        </div>
-    </section>
-    -->
-
 
 </body>
 </html>
