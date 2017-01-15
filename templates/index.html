@@ -55,10 +55,10 @@
     </nav>
 
 
-    <!-- Show login status -->
+    <!-- Show login status and logout button -->
     <div class="container logged-in-content">
         <p>Logged in as: {{ data.us_name }}</p>
-        <a class = "btn btn-default" href="../"> Log out </a>
+        <a class = "btn btn-primary" href="../"> Log out </a>
     </div>
 
 
@@ -142,63 +142,66 @@
     </script>
 
     <div class="container login-area">
-        <p>To use this web app, you should login with your username and password.</p>
-        <p>If you don't have an account, fill in a username and password and press sign up to create one.</p>
-        <form  action="../index.html" method="post"> {% csrf_token %}
-          <div class="container">
-            <label>Set Username: </label>
-            <input type = "text" placeholder = "Username" name = "username" required> <br>
-            <label>Set Password: </label>
-            <input type = "password" placeholder = "Password" name = "password" required> <br>
-            <input type = "submit" value = "Sign up" /><!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
-          </div>
-        </form>
+      <p>Please log in to access the content of the grocery manager.</p>
+      <p>Don't have an account yet? Create one by setting a username and a password below!</p>
+      <form  action="../index.html" method="post"> {% csrf_token %}
+        <div class="container col-centered">
+          <label>Set Username: </label>
+          <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required> <br>
+          <label>Set Password: </label>
+          <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required> <br>
+          <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+          <input type = "submit" value = "Sign up" class = "btn btn-primary"/>
+        </div>
+      </form>
     </div>
 
 
     <!-- Lists -->
 
     <div class="container logged-in-content tab-content tab-content-lists">
-        <div class="row">
-            <div class="col-xs-2 col-md-2"></div>
-            <div class="col-xs-8 col-md-8"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
-            <div class="col-xs-2 col-md-2"></div>
-        </div>
-        <br>
-        <div class="titles row">
-            <div class="col-xs-6 col-md-6 col-centered"><h5>Product:</h5></div>
-            <div class="col-xs-2 col-md-2 col-centered"><h5>Amount:</h5></div>
-            <div class="col-xs-4 col-md-4 col-centered"></div>
-        </div>
+      <div class="row">
+        <div class="col-xs-1 col-md-1"></div>
+        <div class="col-xs-10 col-md-10"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
+        <div class="col-xs-1 col-md-1"></div>
+      </div>
 
-        <form action = "listscript">
-            <div class="producttable">
-                <div class = "row">
-                    <div class="col-xs-6 col-md-6 col-centered">
-                        <input class = "inputtext" type = "text" name = "productinput" required>
-                    </div>
-                    <div class="col-xs-2 col-md-2">
-                        <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                        <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
-                    </div>
-                </div>
+      <br>
+
+      <div class="titles row">
+          <div class="col-xs-6 col-md-6 col-centered"><h5>Product:</h5></div>
+          <div class="col-xs-2 col-md-2 col-centered"><h5>Amount:</h5></div>
+          <div class="col-xs-4 col-md-4 col-centered"></div>
+      </div>
+
+      <!-- Product table-->
+      <form action = "listscript">
+        <div class="producttable">
+          <div class = "row">
+            <div class="col-xs-6 col-md-6 col-centered">
+              <input class = "inputtext" type = "text" name = "productinput" required>
             </div>
-
-            <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
-        </form>
-
-        <br>
-        <br>
-
-        <div class="row">
-            <div class="col-xs-3 col-md-3"></div>
-            <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
-            <div class="col-xs-3 col-md-3"></div>
+            <div class="col-xs-2 col-md-2">
+              <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
+            </div>
+            <div class="col-xs-4 col-md-4">
+              <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+            </div>
+          </div>
         </div>
-    </div>
 
+        <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
+      </form>
+
+      <br>
+      <br>
+
+      <div class="row">
+        <div class="col-xs-3 col-md-3"></div>
+        <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
+        <div class="col-xs-3 col-md-3"></div>
+      </div>
+    </div>
 
     <!-- Favourites -->
 
