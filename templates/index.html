@@ -84,12 +84,57 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
-            if ("{{ data.us_name }}" === "") {
-                $(".logged-in-content").hide();
-            } else {
-                $(".logged-in-content").show();
+
+            function checkLogin() {
+                if ("{{ data.us_name }}" === "") {
+                    $(".logged-in-content").hide();
+                /*} else {
+                    $(".logged-in-content").show();*/
+                }
+                /*$(".login-area").hide();*/
             }
-            /*$(".login-area").hide();*/
+            
+            // first only show home content
+            $(".tab-content").hide();
+            $(".tab-content-home").show();
+
+            // show selected tab content
+            $("#tab-home").click(function() {
+                $(".tab-item").removeClass("active");
+                /* when there is no home tab (title used for this), comment out this line:
+                $("#tab-home").addClass("active");*/
+                $(".tab-content").hide();
+                $(".tab-content-home").show();
+                checkLogin();
+            });
+            $("#tab-lists").click(function() {
+                $(".tab-item").removeClass("active");
+                $("#tab-lists").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-lists").show();
+                checkLogin();
+            });
+            $("#tab-favourites").click(function() {
+                $(".tab-item").removeClass("active");
+                $("#tab-favourites").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-favourites").show();
+                checkLogin();
+            });
+            $("#tab-recipes").click(function() {
+                $(".tab-item").removeClass("active");
+                $("#tab-recipes").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-recipes").show();
+                checkLogin();
+            });
+            $("#tab-supermarkets").click(function() {
+                $(".tab-item").removeClass("active");
+                $("#tab-supermarkets").addClass("active");
+                $(".tab-content").hide();
+                $(".tab-content-supermarkets").show();
+                checkLogin();
+            });
         });
     </script>
 
