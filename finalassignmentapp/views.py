@@ -104,8 +104,8 @@ def userView(request):
             else:
                 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
-            stmt = "SELECT id FROM finalassignmentapp_lists WHERE li_username=%s"
-            params = (username,)
+            stmt = "SELECT id FROM finalassignmentapp_lists WHERE (li_name=%s) AND (li_username=%s)"
+            params = (listname, username,)
             cur.execute(stmt, params)
             listname_exists = cur.fetchone()
 
