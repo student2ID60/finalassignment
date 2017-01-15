@@ -126,7 +126,8 @@ def userView(request):
                 cur.execute(stmt, params)
                 listid = str(cur.fetchone()[0])
 
-                message = "Made list with id: " + listid
+                #message = "Made list with id: " + listid
+                message = ""
             else:
                 message = "You already made a list with this name, try another name"
 
