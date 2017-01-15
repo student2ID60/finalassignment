@@ -28,56 +28,7 @@
     <script src="{% static "assets/js/jquery-3.1.1.min.js" %}"></script>
 
     <script src="{% static "assets/js/script.js" %}"></script>
-</head>
-<body>
 
-    <!-- Fixed tabs -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a id="tab-home" class="navbar-brand" href="#">Grocery Manager</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li id="tab-lists" class="tab-item"><a href="#">Lists</a></li>
-            <li id="tab-favourites" class="tab-item"><a href="#">Favourites</a></li>
-            <li id="tab-recipes" class="tab-item"><a href="#">Recipes</a></li>
-            <li id="tab-supermarkets" class="tab-item"><a href="#">Supermarkets</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-
-    <!-- Show login status and logout button -->
-    <div class="container logged-in-content">
-        <p>Logged in as: {{ data.us_name }}</p>
-        <a class = "btn btn-primary" href="../"> Log out </a>
-    </div>
-
-    <!-- Home -->
-    <div class="container tab-content tab-content-home">
-        <h1>Welcome!</h1>
-        <p>For lists, favourites, etc. see the tabs ;)</p>
-    </div>
-
-    <!-- Login area -->
-    <!--
-    <div class="container login-area">
-        <form  action="index.html" method="post">
-            <label>Username</label>
-            <input type = "text" placeholder = "Username" name = "username" required> <br>
-            <label>Password</label>
-            <input type = "password" placeholder = "Password" name = "password" required> <br>
-            <button type = "button" class = "btn btn-primary"> Login </button>
-        </form>
-    </div>
-    -->
     <script type="text/javascript">
         $(document).ready(function() {
 
@@ -138,6 +89,57 @@
             $(".hidden-info").hide()
         });
     </script>
+
+</head>
+<body>
+    
+    <!-- Fixed tabs -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a id="tab-home" class="navbar-brand" href="#">Grocery Manager</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li id="tab-lists" class="tab-item"><a href="#">Lists</a></li>
+            <li id="tab-favourites" class="tab-item"><a href="#">Favourites</a></li>
+            <li id="tab-recipes" class="tab-item"><a href="#">Recipes</a></li>
+            <li id="tab-supermarkets" class="tab-item"><a href="#">Supermarkets</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Show login status and logout button -->
+    <div class="container logged-in-content">
+        <p>Logged in as: {{ data.us_name }}</p>
+        <a class = "btn btn-primary" href="../"> Log out </a>
+    </div>
+
+    <!-- Home -->
+    <div class="container tab-content tab-content-home">
+        <h1>Welcome!</h1>
+        <p>For lists, favourites, etc. see the tabs ;)</p>
+    </div>
+
+    <!-- Login area -->
+    <!--
+    <div class="container login-area">
+        <form  action="index.html" method="post">
+            <label>Username</label>
+            <input type = "text" placeholder = "Username" name = "username" required> <br>
+            <label>Password</label>
+            <input type = "password" placeholder = "Password" name = "password" required> <br>
+            <button type = "button" class = "btn btn-primary"> Login </button>
+        </form>
+    </div>
+    -->
     <div class="container login-area">
         <p>Please log in to access the content of the grocery manager.</p>
         <p>Don't have an account yet? Create one by setting a username and a password below!</p>
