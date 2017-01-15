@@ -6,7 +6,10 @@ html {
 }
 body {
   /* Margin bottom by footer height */
+  margin-top: 50px;
   margin-bottom: 60px;
+  background-color: #e4f358;
+  border-radius: 15px;
 }
 
 .footer {
@@ -15,12 +18,29 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  background-color: #efefef;
 }
 
-/* Custom page CSS
--------------------------------------------------- */
-/* Not required for template or sticky footer method. */
+.container {
+  max-width: 600px;
+}
+
+.col-centered {
+  text-align: center;
+}
+
+/* content container */
+
+.contentwrapper {
+  background-color: #F3FAB6;
+  border-radius: 15px;
+  /* margin 10px under navbar height */
+  margin-top: 60px;
+}
+
+.login-area {
+  padding-top: 0px;
+}
 
 body > .container {
   padding: 60px 15px 0;
@@ -55,6 +75,8 @@ label {
   border-left: dashed 1px #AFAFAF;
   padding-left: 5px;
 }
+
+
 
 /* Buttons*/
 

@@ -129,123 +129,128 @@
       </div>
     </nav>
 
-    <!-- Show login status and logout button -->
-    <div class="container logged-in-content">
-        <p>Logged in as: {{ username }}</p>
-        <a class = "btn btn-primary" href="../"> Log out </a>
-    </div>
+    <!-- Content -->
+    <div class = "container contentwrapper">
 
-    <!-- Home -->
-    <div class="container tab-content tab-content-home">
-        <h1>Welcome!</h1>
-        <p>For lists, favourites, etc. see the tabs ;)</p>
-    </div>
-
-    <!-- Login area -->
-    <!--
-    <div class="container login-area">
-        <form  action="index.html" method="post">
-            <label>Username</label>
-            <input type = "text" placeholder = "Username" name = "username" required> <br>
-            <label>Password</label>
-            <input type = "password" placeholder = "Password" name = "password" required> <br>
-            <button type = "button" class = "btn btn-primary"> Login </button>
-        </form>
-    </div>
-    -->
-    <div class="container login-area">
-        <p>Please log in to access the content of the grocery manager.</p>
-        <p>Don't have an account yet? Create one by setting a username and a password below!</p>
-        <form  action="../index.html" method="post"> {% csrf_token %}
-            <div class="container col-centered">
-                <input class="inputtext hidden-info" type = "text" name = "command" value="login">
-                <label>Set Username: </label>
-                <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required>
-                <p id="password_message">{{ login_message }}</p>
-                <label>Set Password: </label>
-                <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required>
-                <br>
-                <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
-                <input type = "submit" value = "Login/Sign up" class = "btn btn-primary"/>
-            </div>
-        </form>
-    </div>
-
-    <!-- Lists -->
-    <div class="container logged-in-content tab-content tab-content-lists">
-        <div class="row">
-            <div class="col-xs-1 col-md-1"></div>
-            <div class="col-xs-10 col-md-10">
-                <button id="btn-make-new-list" type = "button" class = "btn btn-default"> Make a new list </button>
-                <button id="btn-load-list" type = "button" class = "btn btn-default"> Load a list </button>
-            </div>
-            <div class="col-xs-1 col-md-1"></div>
+        <!-- Show login status and logout button -->
+        <div class="container logged-in-content">
+            <p>Logged in as: {{ username }}</p>
+            <a class = "btn btn-primary" href="../"> Log out </a>
         </div>
 
-        <form id="form-new-list" action="../index.html" method="post"> {% csrf_token %}
-            <input class="inputtext hidden-info" type = "text" name = "command" value="make_list">
-            <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
-            <label>Set List name: </label>
-            <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>
-            <input type = "submit" value = "Make my list!" class = "btn btn-default"/>
-        </form>
-
-        <p>{{ make_list_message }}</p>
-
-        <br>
-
-        <div class="titles row">
-            <div class="col-xs-6 col-md-6 col-centered"><h5>Product:</h5></div>
-            <div class="col-xs-2 col-md-2 col-centered"><h5>Amount:</h5></div>
-            <div class="col-xs-4 col-md-4 col-centered"></div>
+        <!-- Home -->
+        <div class="container tab-content tab-content-home">
+            <h1>Welcome!</h1>
+            <p>Our grocery manager helps you to keep your shopping lists in one place. Anytime, anywhere. Explore the tabs above to find out how!</p>
         </div>
 
-        <!-- Product table-->
-        <form action = "listscript">
-            <div class="producttable">
-                <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
-                <div class = "row">
-                    <div class="col-xs-6 col-md-6 col-centered">
-                        <input class = "inputtext" type = "text" name = "productinput" required>
-                    </div>
-                    <div class="col-xs-2 col-md-2">
-                        <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
-                    </div>
-                    <div class="col-xs-4 col-md-4">
-                        <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+        <!-- Login area -->
+        <!--
+        <div class="container login-area">
+            <form  action="index.html" method="post">
+                <label>Username</label>
+                <input type = "text" placeholder = "Username" name = "username" required> <br>
+                <label>Password</label>
+                <input type = "password" placeholder = "Password" name = "password" required> <br>
+                <button type = "button" class = "btn btn-primary"> Login </button>
+            </form>
+        </div>
+        -->
+        <div class="container login-area">
+            <p>Please log in to access the content of the grocery manager.</p>
+            <p>Don't have an account yet? Create one by setting a username and a password below!</p>
+            <form  action="../index.html" method="post"> {% csrf_token %}
+                <div class="container">
+                    <input class="inputtext hidden-info" type = "text" name = "command" value="login">
+                    <label>Set Username: </label>
+                    <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required>
+                    <p id="password_message">{{ login_message }}</p>
+                    <label>Set Password: </label>
+                    <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required>
+                    <br>
+                    <!--class = "btn btn-primary" er misschien nog bij (ligt eraan of het alleen opmaak is)-->
+                    <input type = "submit" value = "Login/Sign up" class = "btn btn-primary"/>
+                </div>
+            </form>
+        </div>
+
+        <!-- Lists -->
+        <div class="container logged-in-content tab-content tab-content-lists">
+            <div class="row">
+                <div class="col-xs-1 col-md-1"></div>
+                <div class="col-xs-10 col-md-10">
+                    <button id="btn-make-new-list" type = "button" class = "btn btn-default"> Make a new list </button>
+                    <button id="btn-load-list" type = "button" class = "btn btn-default"> Load a list </button>
+                </div>
+                <div class="col-xs-1 col-md-1"></div>
+            </div>
+
+            <form id="form-new-list" action="../index.html" method="post"> {% csrf_token %}
+                <input class="inputtext hidden-info" type = "text" name = "command" value="make_list">
+                <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                <label>Set List name: </label>
+                <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>
+                <input type = "submit" value = "Make my list!" class = "btn btn-default"/>
+            </form>
+
+            <p>{{ make_list_message }}</p>
+
+            <br>
+
+            <div class="titles row">
+                <div class="col-xs-6 col-md-6 "><h5>Product:</h5></div>
+                <div class="col-xs-2 col-md-2 "><h5>Amount:</h5></div>
+                <div class="col-xs-4 col-md-4 col-centered"></div>
+            </div>
+
+            <!-- Product table-->
+            <form action = "listscript">
+                <div class="producttable">
+                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
+                    <div class = "row">
+                        <div class="col-xs-6 col-md-6">
+                            <input class = "inputtext" type = "text" name = "productinput" required>
+                        </div>
+                        <div class="col-xs-2 col-md-2">
+                            <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
+                        </div>
+                        <div class="col-xs-4 col-md-4 col-centered">
+                            <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+                        </div>
                     </div>
                 </div>
+
+                <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
+            </form>
+
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-xs-3 col-md-3"></div>
+                <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
+                <div class="col-xs-3 col-md-3"></div>
             </div>
-
-            <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
-        </form>
-
-        <br>
-        <br>
-
-        <div class="row">
-            <div class="col-xs-3 col-md-3"></div>
-            <div class="col-xs-6 col-md-6"><button type = "button" class = "btn btn-default"> Save list </button></div>
-            <div class="col-xs-3 col-md-3"></div>
         </div>
+
+        <!-- Favourites -->
+        <div class="container logged-in-content tab-content tab-content-favourites">
+          <p> test favourites </p>
+        </div>
+
+        <!-- Recipes -->
+        <div class="container logged-in-content tab-content tab-content-recipes">
+          <p> test recipes </p>
+        </div>
+
+        <!-- Supermarkets -->
+        <div class="container logged-in-content tab-content tab-content-supermarkets">
+          <p> test supermarkets </p>
+        </div>
+
     </div>
 
-    <!-- Favourites -->
-    <div class="container logged-in-content tab-content tab-content-favourites">
-      <p> test favourites </p>
-    </div>
-
-    <!-- Recipes -->
-    <div class="container logged-in-content tab-content tab-content-recipes">
-      <p> test recipes </p>
-    </div>
-
-    <!-- Supermarkets -->
-    <div class="container logged-in-content tab-content tab-content-supermarkets">
-      <p> test supermarkets </p>
-    </div>
-
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <p class="text-muted"> &copy; Le Grocery Manager</p>
