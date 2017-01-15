@@ -49,9 +49,9 @@
                 $(".tab-content-lists").show();
                 $("#form-new-list").hide();
                 if("{{ listid }}" === ""){
-                    $("#form-new-list").hide();
+                    $("#current-list").hide();
                 } else {
-                    $("#form-new-list").show();
+                    $("#current-list").show();
                 }
                 checkLogin();
             }
