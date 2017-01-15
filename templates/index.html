@@ -92,7 +92,7 @@
 
 </head>
 <body>
-    
+
     <!-- Fixed tabs -->
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
@@ -161,9 +161,24 @@
     <div class="container logged-in-content tab-content tab-content-lists">
         <div class="row">
             <div class="col-xs-1 col-md-1"></div>
-            <div class="col-xs-10 col-md-10"><button type = "button" class = "btn btn-default"> Make a new list </button> <button type = "button" class = "btn btn-default"> Load a list </button></div>
+            <div class="col-xs-10 col-md-10">
+
+                <form  action="../index.html" method="post"> {% csrf_token %}
+                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
+                    <!--<label>Set List name</label>
+                    <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>-->
+                    <input type = "submit" value = "Make a new list" class = "btn btn-default"/>
+                </form>
+
+
+                <button type = "button" class = "btn btn-default"> Load a list </button>
+            </div>
             <div class="col-xs-1 col-md-1"></div>
         </div>
+
+
+
+
 
         <br>
 
