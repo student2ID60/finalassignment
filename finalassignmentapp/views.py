@@ -68,7 +68,7 @@ def userView(request):
 
     else:
         form = UserForm()  # An unbound form
-        return render(request, 'index.html', {
+        return render(request, '', {
             'form': form,
         })
 
