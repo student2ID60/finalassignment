@@ -120,7 +120,12 @@ def userView(request):
                             (listname, username))
                 conn.commit()
                 print("Data Written", datetime.now())
-                listid = listname_exists[0]
+
+                stmt = "SELECT id FROM finalassignmentapp_lists WHERE (li_name=%s) AND (li_username=%s)"
+                params = (listname, username,)
+                cur.execute(stmt, params)
+                listid = cur.fetchone()[0]
+
                 message = "Made list with id: " + str(listid)
             else:
                 message = "You already made a list with this name, try another name"
