@@ -53,6 +53,7 @@ def userView(request):
             username_exists = cur.fetchone()
 
             current_user = {'id': 0, 'us_name': '', 'us_password': '', 'us_loggedin': False}
+            username2 = ''
 
             if username_exists is None:
                 # write data to database
@@ -62,15 +63,17 @@ def userView(request):
                 conn.commit()
                 print("Data Written", datetime.now())
                 current_user = Users.objects.last()  # niet zo netjes
+                username2 = current_user.us_name
 
             else :
-                required_password = username_exists[0];
+                required_password = username_exists[0]
                 if password == required_password:
                     stmt = "UPDATE finalassignmentapp_users SET us_loggedin=TRUE WHERE us_name=%s"
                     params = (username,)
                     cur.execute(stmt,params)
                     conn.commit()
-                    current_user = Users.objects.filter(us_name=username).first();
+                    current_user = Users.objects.filter(us_name=username).first()
+                    username2 = username
                 else:
                     message = "Wrong password for chosen username, try again"
 
@@ -79,7 +82,7 @@ def userView(request):
             conn.close()
 
             return TemplateResponse(request, 'index.html', {
-                'username': current_user['us_name'],
+                'username': username2,
                 'data': current_user,
                 'login_message': message,
             })
