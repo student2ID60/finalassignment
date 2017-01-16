@@ -64,7 +64,7 @@
                         $('.form-order').remove();
                         for (i=0; i<order_array.length; i++){
                             order_array_array[i] = order_array[i].split(", ");
-                            $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required readonly> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='max-width: 70px; min-width: 35px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + " readonly> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
+                            $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required readonly> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='max-width: 100px; min-width: 50px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + " readonly> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
                         }
                     }
 
@@ -201,6 +201,7 @@
                     <p id="password_message">{{ login_message }}</p>
                     <label>Set Username: </label>
                     <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required>
+                    <br>
                     <label>Set Password: </label>
                     <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required>
                     <br>
@@ -293,7 +294,7 @@
                                 <input class = "inputtext" type = "text" name = "productname" required>
                             </div>
                             <div class="col-xs-2 col-md-2">
-                                <input class = "inputtext" type = "text" style="max-width: 70px; min-width: 35px" name = "amount">
+                                <input class = "inputtext" type = "text" style="max-width: 100px; min-width: 50px" name = "amount">
                             </div>
                             <div class="col-xs-4 col-md-4 col-centered">
                                 <input type = "submit" value = "Add" class = "btn btn-primary"/>
