@@ -49,7 +49,7 @@
                 $(".tab-content-lists").show();
                 $("#form-new-list").hide();
                 $("#list-load-lists").hide();
-                if("{{ list }}" === ""){
+                if("{{ list_id }}" === ""){
                     $("#current-list").hide();
                 } else {
                     $("#current-list").show();
@@ -112,7 +112,7 @@
                 $("#list-load-lists").show();
                 $("#current-list").hide();
 
-                var list_array = {{ user_lists }};
+                var list_array = "{{ user_lists }}";
                 /*var list_array = list_array_str.split(",");*/
 
                 $('#list-load-lists').append("\n<form action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='3'> \n <input type = 'submit' value = 'Added List' class = 'listtable'/> \n </form>\n");
@@ -256,6 +256,7 @@
 
                 <!-- Product table-->
                 <form action = "listscript">
+                    <p>{{ list_orders }}</p>
                     <div class="producttable">
                         <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
                         <div class = "row">
