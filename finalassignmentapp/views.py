@@ -26,6 +26,7 @@ def userView(request):
 
         if command == "login":
             message = ""
+            user_lists = ""
             form = UserForm(request.POST)
 
             username = request.POST.get('username', '')
@@ -74,6 +75,13 @@ def userView(request):
                     conn.commit()
                     current_user = Users.objects.filter(us_name=username).first()
                     username2 = username
+
+                    stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
+                    params = (username,)
+                    cur.execute(stmt, params)
+                    user_lists = cur.fetchone()
+
+
                 else:
                     message = "Wrong password for chosen username, try again"
 
@@ -85,6 +93,7 @@ def userView(request):
                 'username': username2,
                 'data': current_user,
                 'login_message': message,
+                'user_lists': user_lists,
             })
             #return HttpResponseRedirect('../lists.html')  # Redirect after POST
 
@@ -94,6 +103,7 @@ def userView(request):
             username = request.POST.get('username')
             listname = request.POST.get('listname')
             listid = ""
+            user_lists = request.POST.get('user_lists')
 
             # open database
             try:
@@ -126,6 +136,11 @@ def userView(request):
                 cur.execute(stmt, params)
                 listid = str(cur.fetchone()[0])
 
+                stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
+                params = (username,)
+                cur.execute(stmt, params)
+                user_lists = cur.fetchone()
+
                 #message = "Made list with id: " + listid
                 message = ""
             else:
@@ -136,6 +151,7 @@ def userView(request):
 
             return TemplateResponse(request, 'index.html', {
                 'username': request.POST.get('username'),
+                'user_lists': user_lists,
                 'make_list_message': message,
                 'tab': 'lists',
                 'list': listid,

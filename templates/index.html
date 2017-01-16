@@ -146,8 +146,8 @@
     <!-- Content -->
     <div class = "container contentwrapper">
 
-      <!-- Show login status and logout button -->
-      <div class="container logged-in-content">
+        <!-- Show login status and logout button -->
+        <div class="container logged-in-content">
         <div class = "right-content">
           <p>Logged in as: {{ username }} | <a class = "btn btn-primary" href="../"> Log out </a>
         </div>
@@ -203,17 +203,22 @@
             <form id="form-new-list" action="../index.html" method="post"> {% csrf_token %}
                 <input class="inputtext hidden-info" type = "text" name = "command" value="make_list">
                 <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
                 <label>Set List name: </label>
                 <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>
                 <input type = "submit" value = "Make my list!" class = "btn btn-default"/>
-                <p>{{ make_list_message }}</p>
+
             </form>
+
+            <p>{{ make_list_message }}</p>
 
             <div id="list-load-lists">
                 <p>These are your saved lists. Choose one to load it.</p>
+                <p>{{ user_lists }}</p>
                 <form action="../index.html" method="post"> {% csrf_token %}
                     <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
                     <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                    <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
                     <input type = "submit" value = "Name of the list" class = "btn btn-default"/>
                 </form>
             </div>
