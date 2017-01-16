@@ -54,7 +54,7 @@
                 } else {
                     $("#current-list").show();
 
-                    if ('{{ list_orders }}' !== '[]'){
+                    if (('{{ list_orders }}' !== '[]') && ('{{ list_orders }}' !== '')){
                         var order_array_str = '{{ list_orders }}';
                         order_array_str = order_array_str.replace("&#39;","");
                         order_array_str = order_array_str.substring(2, order_array_str.length-2);
