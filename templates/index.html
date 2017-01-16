@@ -54,16 +54,18 @@
                 } else {
                     $("#current-list").show();
 
-                    var order_array_str = '{{ list_orders }}';
-                    order_array_str = order_array_str.replace("&#39;","");
-                    order_array_str = order_array_str.substring(2, order_array_str.length-2);
-                    var order_array = order_array_str.split("], [");
-                    var order_array_array = [];
+                    if ('{{ list_orders }}' !== '[]'){
+                        var order_array_str = '{{ list_orders }}';
+                        order_array_str = order_array_str.replace("&#39;","");
+                        order_array_str = order_array_str.substring(2, order_array_str.length-2);
+                        var order_array = order_array_str.split("], [");
+                        var order_array_array = [];
 
-                    $('.form-order').remove();
-                    for (i=0; i<order_array.length; i++){
-                        order_array_array[i] = order_array[i].split(", ");
-                        $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='width: 100px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + "> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
+                        $('.form-order').remove();
+                        for (i=0; i<order_array.length; i++){
+                            order_array_array[i] = order_array[i].split(", ");
+                            $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='width: 100px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + "> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
+                        }
                     }
 
                     $(".hidden-info").hide();
