@@ -192,6 +192,53 @@ def userView(request):
                 'list_orders': list_orders,
             })
 
+        elif command == "add_order":
+            username = request.POST.get('username')
+            listname = request.POST.get('listname')
+            listid = request.POST.get('list_id')
+            user_lists = request.POST.get('user_lists')
+
+            productname = request.POST.get('productname')
+            amount = request.POST.get('amount')
+
+            # open database
+            try:
+                conn = psycopg2.connect(dbname='d3enlk294pbi15', user='tleawaslframmo',
+                                        host='ec2-107-22-236-252.compute-1.amazonaws.com',
+                                        password='6f347648c1a4b2a5aeb99ef699a0aba2d4f4a64d614b68c6159e180dc2b60e3e')
+                print('Opened DB successfully')
+            except:
+                print(datetime.now(), "Unable to connect to the database")
+                logging.exception("Unable to open the database")
+                return
+            else:
+                cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
+
+            # write data to database
+            cur.execute("""INSERT INTO finalassignmentapp_orders (or_product, or_amount, or_listid)
+                                                    VALUES (%s, %s, %s)""",
+                        (productname, amount, listid))
+            conn.commit()
+            print("Data Written", datetime.now())
+
+            stmt = "SELECT * FROM finalassignmentapp_orders WHERE or_listid=%s"
+            params = (int(listid),)
+            cur.execute(stmt, params)
+            list_orders = cur.fetchall()
+
+            cur.close()
+            conn.close()
+
+            return TemplateResponse(request, 'index.html', {
+                'username': request.POST.get('username'),
+                'user_lists': user_lists,
+                'make_list_message': '',
+                'tab': 'lists',
+                'list_id': listid,
+                'list_orders': list_orders,
+                'order_message': 'added order',
+            })
+
     else:
         form = UserForm()  # An unbound form
         return render(request, 'index.html', {

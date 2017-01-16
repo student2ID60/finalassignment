@@ -265,25 +265,28 @@
                 </div>
 
                 <!-- Product table-->
-                <form action = "listscript">
+                <div class="producttable">
                     <p>{{ list_orders }}</p>
-                    <div class="producttable">
-                        <input class="inputtext hidden-info" type = "text" name = "username" value="{{ data.us_name }}">
+                    <form id="form-new-order" action="../index.html" method="post"> {% csrf_token %}>
+                        <input class="inputtext hidden-info" type = "text" name = "command" value="add_order">
+                        <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                        <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
+                        <input class="inputtext hidden-info" type = "text" name = "list_id" value="{{ list_id }}">
+
                         <div class = "row">
                             <div class="col-xs-6 col-md-6">
-                                <input class = "inputtext" type = "text" name = "productinput" required>
+                                <input class = "inputtext" type = "text" name = "productname" required>
                             </div>
                             <div class="col-xs-2 col-md-2">
-                                <input class = "inputtext" type = "number" min="0" style="width: 50px" name = "amountinput" required>
+                                <input class = "inputtext" type = "text" min="0" style="width: 100px" name = "amount">
                             </div>
                             <div class="col-xs-4 col-md-4 col-centered">
-                                <button type = "button" class = "btn btn-primary">X</button> <button type = "button" class = "btn btn-primary">X</button>
+                                <input type = "submit" value = "Add" class = "btn btn-primary"/>
                             </div>
                         </div>
-                    </div>
-
-                    <button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>
-                </form>
+                    </form>
+                    <!--<button type = "button" class = "btn btn-default"> Import a Favourite </button> <button type = "button" class = "btn btn-default"> Import a Recipe </button>-->
+                </div>
 
                 <br>
                 <br>
