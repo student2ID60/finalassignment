@@ -1,15 +1,23 @@
-/* Sticky footer styles
--------------------------------------------------- */
+/* BASIC STRUCTURE */
+
 html {
   position: relative;
   min-height: 100%;
 }
 body {
-  /* Margin bottom by footer height */
-  margin-top: 70px;
+  /* Margin top + bottom by navbar +footer height */
+  margin-top: 60px;
   margin-bottom: 60px;
   background-color: #e4f358;
   border-radius: 15px;
+}
+
+body > .container {
+  padding: 50px 15px 0;
+}
+
+.navbar, .navbar-header, .navbar-collapse {
+  height: 50px;
 }
 
 .footer {
@@ -21,22 +29,9 @@ body {
   background-color: #efefef;
 }
 
-.container {
-  max-width: 550px;
-  padding-bottom: 10px;
-}
-
-.navbar-header, .navbar-collapse {
-  padding-bottom: 0px;
-}
-
-.container2 {
-  max-width: 500px;
-  padding-bottom: 10px;
-}
-
-.col-centered {
-  text-align: center;
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 /* content container */
@@ -47,23 +42,28 @@ body {
   /* margin 10px under navbar height */
   margin-top: 60px;
 }
-
-.right-content {
-  text-align: right;
-  padding-right: 20px;
-}
-
-
-body > .container {
-  padding: 50px 15px 0;
-}
 .container .text-muted {
   margin: 20px 0;
 }
 
-.footer > .container {
-  padding-right: 15px;
-  padding-left: 15px;
+.container {
+  max-width: 550px;
+  padding-bottom: 10px;
+}
+
+
+.container2 {
+  max-width: 500px;
+  padding-bottom: 10px;
+}
+
+.col-centered {
+  text-align: center;
+}
+
+.right-content {
+  text-align: right;
+  padding-right: 20px;
 }
 
 /* navbar */
@@ -77,6 +77,10 @@ body > .container {
 p {
   font-family: 'Lucida Grande', sans-serif;
   font-size: 13px;
+}
+
+#password_message {
+    color: red;
 }
 
 label {
@@ -100,7 +104,7 @@ label {
   border-width: 1.5px;
   border-color: #CFCFCF;
   border-radius: 3px;
-  width:
+  max-width: 500px;
 }
 
 .listtable:hover {

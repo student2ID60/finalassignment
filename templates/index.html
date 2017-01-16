@@ -64,7 +64,7 @@
                         $('.form-order').remove();
                         for (i=0; i<order_array.length; i++){
                             order_array_array[i] = order_array[i].split(", ");
-                            $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='width: 70px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + "> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
+                            $('#form-new-order').before("\n<form class='form-order' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='delete_order'> \n <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='{{ list_id }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'order_id' value= '" + order_array_array[i][0] + "'> \n <div class = 'row'> \n <div class='col-xs-6 col-md-6'> \n  <input class = 'inputtext' type = 'text' name = 'productname' value= " + order_array_array[i][1].replace(" ", "_") + " required> \n </div> \n <div class='col-xs-2 col-md-2'> \n <input class = 'inputtext' type = 'text' style='max-width: 70px' name = 'amount' value = " + order_array_array[i][2].replace(" ", "_") + "> \n </div> \n <div class='col-xs-4 col-md-4 col-centered'> \n <input type = 'submit' value = 'Delete' class = 'btn btn-primary'/> \n </div> \n </div> \n </form>\n");
                         }
                     }
 
@@ -192,26 +192,15 @@
         </div>
 
         <!-- Login area -->
-        <!--
-        <div class="container login-area">
-            <form  action="index.html" method="post">
-                <label>Username</label>
-                <input type = "text" placeholder = "Username" name = "username" required> <br>
-                <label>Password</label>
-                <input type = "password" placeholder = "Password" name = "password" required> <br>
-                <button type = "button" class = "btn btn-primary"> Login </button>
-            </form>
-        </div>
-        -->
         <div class="container login-area">
             <p>Please log in to access the content of the grocery manager.</p>
             <p>Don't have an account yet? Create one by setting a username and a password below!</p>
             <form  action="../index.html" method="post"> {% csrf_token %}
                 <div class="container">
                     <input class="inputtext hidden-info" type = "text" name = "command" value="login">
+                    <p id="password_message">{{ login_message }}</p>
                     <label>Set Username: </label>
                     <input type = "text" class = "inputtext" style="width: 200px"  placeholder = "Username" name = "username" required>
-                    <p id="password_message">{{ login_message }}</p>
                     <label>Set Password: </label>
                     <input type = "password" class = "inputtext" style="width: 200px" placeholder = "Password" name = "password" required>
                     <br>
@@ -304,7 +293,7 @@
                                 <input class = "inputtext" type = "text" name = "productname" required>
                             </div>
                             <div class="col-xs-2 col-md-2">
-                                <input class = "inputtext" type = "text" style="width: 70px" name = "amount">
+                                <input class = "inputtext" type = "text" style="max-width: 70px" name = "amount">
                             </div>
                             <div class="col-xs-4 col-md-4 col-centered">
                                 <input type = "submit" value = "Add" class = "btn btn-primary"/>
