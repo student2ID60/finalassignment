@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97ba116-1737-4c7a-bad1-99545d033f26" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalassignmentapp/views.py" afterPath="$PROJECT_DIR$/finalassignmentapp/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,11 +23,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1511">
-              <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
                 <marker date="1484564087031" expanded="true" signature="1815:1880" ph="SELECT us_pa... finalassignmentapp_users" />
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-698">
-              <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+            <state relative-caret-position="543">
+              <caret line="238" column="18" lean-forward="true" selection-start-line="238" selection-start-column="18" selection-end-line="238" selection-end-column="18" />
               <folding>
                 <element signature="e#1405#1708#0#HTML" expanded="false" />
                 <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -81,7 +81,7 @@
                 <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#12649#12655#0#HTML" expanded="true" />
+                <element signature="e#14036#14042#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -191,8 +191,8 @@
         <option value="$PROJECT_DIR$/static/assets/js/script.js" />
         <option value="$PROJECT_DIR$/finalassignmentapp/models.py" />
         <option value="$PROJECT_DIR$/static/assets/css/stylesheet.css" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/finalassignmentapp/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
   </component>
@@ -651,7 +651,7 @@
     <frame x="535" y="0" width="1385" height="1032" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35991222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2253109" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="manage.py@finalassignment" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24692738" sideWeight="0.4930505" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24692738" sideWeight="0.50694954" order="7" side_tool="true" content_ui="tabs" />
@@ -775,7 +775,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#12649#12655#0#HTML" expanded="true" />
+            <element signature="e#14036#14042#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -934,10 +934,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+            <marker date="1484564087031" expanded="true" signature="1815:1880" ph="SELECT us_pa... finalassignmentapp_users" />
+            <marker date="1484564087031" expanded="true" signature="2231:2355" ph="INSERT INTO finalassignmentapp_users... " />
+            <marker date="1484564087031" expanded="true" signature="2776:2845" ph="UPDATE final... " />
+            <marker date="1484564087031" expanded="true" signature="2776:6768" ph="UPDATE final... " />
+            <marker date="1484564087031" expanded="true" signature="3119:3178" ph="SELECT * FRO... finalassignmentapp_lists" />
+            <marker date="1484564087031" expanded="true" signature="4699:4778" ph="SELECT id FR... finalassignmentapp_lists" />
+            <marker date="1484564087031" expanded="true" signature="5019:5138" ph="INSERT INTO finalassignmentapp_lists... " />
+            <marker date="1484564087031" expanded="true" signature="5302:5381" ph="SELECT id FR... finalassignmentapp_lists" />
+            <marker date="1484564087031" expanded="true" signature="5545:5604" ph="SELECT * FRO... finalassignmentapp_lists" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-698">
-          <caret line="110" column="24" lean-forward="false" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
+        <state relative-caret-position="543">
+          <caret line="238" column="18" lean-forward="true" selection-start-line="238" selection-start-column="18" selection-end-line="238" selection-end-column="18" />
           <folding>
             <element signature="e#1405#1708#0#HTML" expanded="false" />
             <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -958,26 +977,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#12649#12655#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1511">
-          <caret line="82" column="0" lean-forward="true" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <marker date="1484564087031" expanded="true" signature="1815:1880" ph="SELECT us_pa... finalassignmentapp_users" />
-            <marker date="1484564087031" expanded="true" signature="2231:2355" ph="INSERT INTO finalassignmentapp_users... " />
-            <marker date="1484564087031" expanded="true" signature="2776:2845" ph="UPDATE final... " />
-            <marker date="1484564087031" expanded="true" signature="2776:6768" ph="UPDATE final... " />
-            <marker date="1484564087031" expanded="true" signature="3119:3178" ph="SELECT * FRO... finalassignmentapp_lists" />
-            <marker date="1484564087031" expanded="true" signature="4699:4778" ph="SELECT id FR... finalassignmentapp_lists" />
-            <marker date="1484564087031" expanded="true" signature="5019:5138" ph="INSERT INTO finalassignmentapp_lists... " />
-            <marker date="1484564087031" expanded="true" signature="5302:5381" ph="SELECT id FR... finalassignmentapp_lists" />
-            <marker date="1484564087031" expanded="true" signature="5545:5604" ph="SELECT * FRO... finalassignmentapp_lists" />
+            <element signature="e#14036#14042#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
