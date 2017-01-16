@@ -128,7 +128,7 @@
                 $("#list-load-lists").show();
                 $("#current-list").hide();
 
-                var list_array_str = '{{ user_lists|safe }}';
+                var list_array_str = '{{ user_lists }}';
                 list_array_str = list_array_str.replace("&#39;","");
                 list_array_str = list_array_str.substring(2, list_array_str.length-2);
                 var list_array = list_array_str.split("], [");
