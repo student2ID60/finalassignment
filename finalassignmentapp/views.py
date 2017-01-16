@@ -26,7 +26,7 @@ def userView(request):
 
         if command == "login":
             message = ""
-            user_lists = ""
+            user_lists = []
             form = UserForm(request.POST)
 
             username = request.POST.get('username', '')
@@ -161,6 +161,7 @@ def userView(request):
         form = UserForm()  # An unbound form
         return render(request, 'index.html', {
             'form': form,
+            'user_lists': [],
         })
 
 def favourites(request):
