@@ -119,9 +119,9 @@
 
                 for (i=0; i<list_array.length; i++){
                     list_array_array[i] = list_array[i].split(", ");
+                    $('#list-load-lists').append("\n<form action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='" + list_array_array[i][0].toString() + "'> \n <input type = 'submit' value = '" + list_array_array[i][1] + "' class = 'listtable'/> \n </form>\n");
                 }
-                $('#list-load-lists').append("\n<p>" + list_array_array[0] + "</p>\n");
-                $('#list-load-lists').append("\n<form action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='3'> \n <input type = 'submit' value = 'Added List' class = 'listtable'/> \n </form>\n");
+
                 $(".hidden-info").hide();
 
             });
