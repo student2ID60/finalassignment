@@ -139,12 +139,12 @@ def userView(request):
                 stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
                 params = (username,)
                 cur.execute(stmt, params)
-                user_lists = cur.fetchall()
+                user_lists = cur()
 
                 #message = "Made list with id: " + listid
                 message = ""
             else:
-                message = "You already made a list with this name, try another name"
+                message = "You already made a list with this name, try another name or load a list"
 
             cur.close()
             conn.close()
