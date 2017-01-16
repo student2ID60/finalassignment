@@ -176,7 +176,7 @@ def userView(request):
                 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
             stmt = "SELECT * FROM finalassignmentapp_orders WHERE or_listid=%s"
-            params = (listid,)
+            params = (int(listid),)
             cur.execute(stmt, params)
             list_orders = cur.fetchall()
 
