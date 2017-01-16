@@ -262,7 +262,7 @@ def userView(request):
                 cur = conn.cursor(cursor_factory=psycopg2.extras.DictCursor)
 
             # delete data from database
-            stmt = "DELETE * FROM finalassignmentapp_orders WHERE id=%s"
+            stmt = "DELETE FROM finalassignmentapp_orders WHERE id=%s"
             params = (int(order_id),)
             cur.execute(stmt, params)
             conn.commit()
