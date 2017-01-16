@@ -48,6 +48,7 @@
                 $(".tab-content").hide();
                 $(".tab-content-lists").show();
                 $("#form-new-list").hide();
+                $("#list-load-lists").hide();
                 if("{{ list }}" === ""){
                     $("#current-list").hide();
                 } else {
@@ -101,6 +102,13 @@
 
             $("#btn-make-new-list").click(function() {
                 $("#form-new-list").show();
+                $("#list-load-lists").hide();
+                $("#current-list").hide();
+            });
+
+            $("#btn-load-list").click(function() {
+                $("#form-new-list").hide();
+                $("#list-load-lists").show();
                 $("#current-list").hide();
             });
 
@@ -198,9 +206,17 @@
                 <label>Set List name: </label>
                 <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>
                 <input type = "submit" value = "Make my list!" class = "btn btn-default"/>
+                <p>{{ make_list_message }}</p>
             </form>
 
-            <p>{{ make_list_message }}</p>
+            <div id="list-load-lists">
+                <p>These are your saved lists. Choose one to load it.</p>
+                <form action="../index.html" method="post"> {% csrf_token %}
+                    <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
+                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                    <input type = "submit" value = "Name of the list" class = "btn btn-default"/>
+                </form>
+            </div>
 
             <br>
 
