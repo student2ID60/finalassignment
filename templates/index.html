@@ -228,7 +228,7 @@
             <p id="make-list-message">{{ make_list_message }}</p>
 
             <div id="list-load-lists">
-                <p>{{ user_lists }}</p>
+                <!--<p>{{ user_lists }}</p>-->
                 <p id="load-list-instruction">These are your saved lists. Choose one to load it, or make a new list by clicking the 'Make a new list'-button above.</p>
                 <!--
                 <form action="../index.html" method="post"> {% csrf_token %}
@@ -237,20 +237,6 @@
                     <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
                     <input class="inputtext hidden-info" type = "text" name = "list_id" value="3">
                     <input type = "submit" value = "Name of the list" class = "listtable"/>
-                </form>
-                <form action="../index.html" method="post"> {% csrf_token %}
-                    <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
-                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
-                    <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
-                    <input class="inputtext hidden-info" type = "text" name = "list_id" value="9">
-                    <input type = "submit" value = "Name of another list" class = "listtable"/>
-                </form>
-                <form action="../index.html" method="post"> {% csrf_token %}
-                    <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
-                    <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
-                    <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
-                    <input class="inputtext hidden-info" type = "text" name = "list_id" value="21">
-                    <input type = "submit" value = "Name of the last example list" class = "listtable"/>
                 </form>
                 -->
             </div>
@@ -267,7 +253,30 @@
                 <!-- Product table-->
                 <div class="producttable">
                     <p>{{ list_orders }}</p>
-                    <form id="form-new-order" action="../index.html" method="post"> {% csrf_token %}>
+
+                    <!-- Example of an order -->
+                    <form class="form-order" action="../index.html" method="post"> {% csrf_token %}
+                        <input class="inputtext hidden-info" type = "text" name = "command" value="delete_order">
+                        <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
+                        <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
+                        <input class="inputtext hidden-info" type = "text" name = "list_id" value="{{ list_id }}">
+                        <input class="inputtext hidden-info" type = "text" name = "order_id" value="{{ order_id }}">
+
+                        <div class = "row">
+                            <div class="col-xs-6 col-md-6">
+                                <input class = "inputtext" type = "text" name = "productname" required>
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                                <input class = "inputtext" type = "text" min="0" style="width: 100px" name = "amount">
+                            </div>
+                            <div class="col-xs-4 col-md-4 col-centered">
+                                <input type = "submit" value = "Delete" class = "btn btn-primary"/>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Form for new order -->
+                    <form id="form-new-order" action="../index.html" method="post"> {% csrf_token %}
                         <input class="inputtext hidden-info" type = "text" name = "command" value="add_order">
                         <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
                         <input class="inputtext hidden-info" type = "text" name = "user_lists" value="{{ user_lists }}">
