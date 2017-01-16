@@ -79,8 +79,7 @@ def userView(request):
                     stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
                     params = (username,)
                     cur.execute(stmt, params)
-                    user_lists = cur.fetchone()
-
+                    user_lists = cur.fetchall()
 
                 else:
                     message = "Wrong password for chosen username, try again"
@@ -139,7 +138,7 @@ def userView(request):
                 stmt = "SELECT * FROM finalassignmentapp_lists WHERE li_username=%s"
                 params = (username,)
                 cur.execute(stmt, params)
-                user_lists = cur()
+                user_lists = cur.fetchall()
 
                 #message = "Made list with id: " + listid
                 message = ""
