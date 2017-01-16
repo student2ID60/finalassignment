@@ -111,6 +111,11 @@
                 $("#make-list-message").hide();
                 $("#list-load-lists").show();
                 $("#current-list").hide();
+
+                var list_array = {{ user_list }};
+                $('#load-list-instruction').after("\n<form action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='3'> \n <input type = 'submit' value = 'Name of the list' class = 'listtable'/> \n </form>\n");
+
+
             });
 
             // always hide this info
@@ -213,8 +218,8 @@
             <p id="make-list-message">{{ make_list_message }}</p>
 
             <div id="list-load-lists">
-                <p>These are your saved lists. Choose one to load it.</p>
                 <p>{{ user_lists }}</p>
+                <p id="load-list-instruction">These are your saved lists. Choose one to load it.</p>
                 <form action="../index.html" method="post"> {% csrf_token %}
                     <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
                     <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
