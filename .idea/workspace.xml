@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97ba116-1737-4c7a-bad1-99545d033f26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/assets/css/stylesheet.css" afterPath="$PROJECT_DIR$/static/assets/css/stylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,8 +60,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="543">
-              <caret line="238" column="18" lean-forward="true" selection-start-line="238" selection-start-column="18" selection-end-line="238" selection-end-column="18" />
+            <state relative-caret-position="349">
+              <caret line="239" column="0" lean-forward="true" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
               <folding>
                 <element signature="e#1405#1708#0#HTML" expanded="false" />
                 <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -81,7 +82,7 @@
                 <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#14036#14042#0#HTML" expanded="true" />
+                <element signature="e#14018#14024#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,8 +134,8 @@
       <file leaf-file-name="stylesheet.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/assets/css/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4026">
-              <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
+            <state relative-caret-position="565">
+              <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -190,8 +191,8 @@
         <option value="$PROJECT_DIR$/templates/lists.html" />
         <option value="$PROJECT_DIR$/static/assets/js/script.js" />
         <option value="$PROJECT_DIR$/finalassignmentapp/models.py" />
-        <option value="$PROJECT_DIR$/static/assets/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/finalassignmentapp/views.py" />
+        <option value="$PROJECT_DIR$/static/assets/css/stylesheet.css" />
         <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
@@ -775,7 +776,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14036#14042#0#HTML" expanded="true" />
+            <element signature="e#14018#14024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,14 +927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/assets/css/stylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4026">
-          <caret line="183" column="0" lean-forward="false" selection-start-line="183" selection-start-column="0" selection-end-line="183" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -953,10 +946,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/assets/css/stylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="194" column="0" lean-forward="false" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="543">
-          <caret line="238" column="18" lean-forward="true" selection-start-line="238" selection-start-column="18" selection-end-line="238" selection-end-column="18" />
+        <state relative-caret-position="349">
+          <caret line="239" column="0" lean-forward="true" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="0" />
           <folding>
             <element signature="e#1405#1708#0#HTML" expanded="false" />
             <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -977,7 +978,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14036#14042#0#HTML" expanded="true" />
+            <element signature="e#14018#14024#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

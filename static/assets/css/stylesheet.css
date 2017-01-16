@@ -6,7 +6,7 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-top: 50px;
+  margin-top: 70px;
   margin-bottom: 60px;
   background-color: #e4f358;
   border-radius: 15px;
@@ -24,6 +24,10 @@ body {
 .container {
   max-width: 550px;
   padding-bottom: 10px;
+}
+
+.navbar-header, .navbar-collapse {
+  padding-bottom: 0px;
 }
 
 .container2 {
@@ -50,9 +54,8 @@ body {
 }
 
 
-
 body > .container {
-  padding: 60px 15px 0;
+  padding: 50px 15px 0;
 }
 .container .text-muted {
   margin: 20px 0;
@@ -63,17 +66,13 @@ body > .container {
   padding-left: 15px;
 }
 
-code {
-  font-size: 80%;
-}
-
 /* navbar */
 
 .active {
   border-bottom: solid 2px #28852c;
 }
 
-/* Text */
+/* TEXT */
 
 p {
   font-family: 'Lucida Grande', sans-serif;
@@ -85,9 +84,31 @@ label {
   padding-left: 5px;
 }
 
+/* TABLES */
 
+.producttable {
+  background-color: #f7ffd3;
+  border-style: dotted;
+  border-width: 1.5px;
+  border-color: #CFCFCF;
+  border-radius: 3px;
+}
 
-/* Buttons*/
+.listtable {
+  background-color: #f7ffd3;
+  border-style: dotted;
+  border-width: 1.5px;
+  border-color: #CFCFCF;
+  border-radius: 3px;
+  width:
+}
+
+.listtable:hover {
+  background-color: #909e4b;
+  color: white;
+}
+
+/* BUTTONS */
 
 .btn-default {
   border-top: 1px solid #88db83;
@@ -146,17 +167,7 @@ label {
   background: #308a35;
   }
 
-/* border around producttable */
-
-.producttable {
-  background-color: #FDFDFD;
-  border-style: dotted;
-  border-width: 1.5px;
-  border-color: #CFCFCF;
-  border-radius: 3px;
-}
-
-/* input fields */
+/* INPUT FIELDS */
 
 .inputtext {
     height: 25px;
