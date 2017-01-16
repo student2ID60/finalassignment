@@ -117,9 +117,10 @@
                 var list_array = list_array_str.split("], [");
                 var list_array_array = [];
 
+                $('.list-load-list-item').remove();
                 for (i=0; i<list_array.length; i++){
                     list_array_array[i] = list_array[i].split(", ");
-                    $('#list-load-lists').append("\n<form action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='" + list_array_array[i][0].toString() + "'> \n <input type = 'submit' value = '" + list_array_array[i][1] + "' class = 'listtable'/> \n </form>\n");
+                    $('#list-load-lists').append("\n<form class='list-load-list-item' action='../index.html' method='post'> {% csrf_token %} \n <input class='inputtext hidden-info' type = 'text' name = 'command' value='load_list'> \n  <input class='inputtext hidden-info' type = 'text' name = 'username' value='{{ username }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'user_lists' value='{{ user_lists }}'> \n <input class='inputtext hidden-info' type = 'text' name = 'list_id' value='" + list_array_array[i][0].toString() + "'> \n <input type = 'submit' value = '" + list_array_array[i][1] + "' class = 'listtable'/> \n </form>\n");
                 }
 
                 $(".hidden-info").hide();
@@ -227,7 +228,8 @@
 
             <div id="list-load-lists">
                 <p>{{ user_lists }}</p>
-                <p id="load-list-instruction">These are your saved lists. Choose one to load it.</p>
+                <p id="load-list-instruction">These are your saved lists. Choose one to load it, or make a new list by clicking the 'Make a new list'-button above.</p>
+                <!--
                 <form action="../index.html" method="post"> {% csrf_token %}
                     <input class="inputtext hidden-info" type = "text" name = "command" value="load_list">
                     <input class="inputtext hidden-info" type = "text" name = "username" value="{{ username }}">
@@ -249,6 +251,7 @@
                     <input class="inputtext hidden-info" type = "text" name = "list_id" value="21">
                     <input type = "submit" value = "Name of the last example list" class = "listtable"/>
                 </form>
+                -->
             </div>
 
             <br>
