@@ -108,6 +108,7 @@
 
             $("#btn-load-list").click(function() {
                 $("#form-new-list").hide();
+                $("#make-list-message").hide();
                 $("#list-load-lists").show();
                 $("#current-list").hide();
             });
@@ -207,10 +208,9 @@
                 <label>Set List name: </label>
                 <input type = "text" class = "inputtext" style="width: 200px" placeholder = "List name" name = "listname" required>
                 <input type = "submit" value = "Make my list!" class = "btn btn-default"/>
-
             </form>
 
-            <p>{{ make_list_message }}</p>
+            <p id="make-list-message">{{ make_list_message }}</p>
 
             <div id="list-load-lists">
                 <p>These are your saved lists. Choose one to load it.</p>
