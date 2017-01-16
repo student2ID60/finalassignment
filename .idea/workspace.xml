@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f97ba116-1737-4c7a-bad1-99545d033f26" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,7 +27,7 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
+            <state relative-caret-position="1716">
               <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -59,8 +60,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+            <state relative-caret-position="411">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding>
                 <element signature="e#1405#1708#0#HTML" expanded="false" />
                 <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -71,7 +72,7 @@
                 <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#6910#7415#0#HTML" expanded="false" />
+                <element signature="e#6969#7474#0#HTML" expanded="false" />
                 <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#1;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#input#2;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -80,7 +81,7 @@
                 <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#14712#14718#0#HTML" expanded="true" />
+                <element signature="e#14771#14777#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -764,7 +765,7 @@
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6910#7415#0#HTML" expanded="false" />
+            <element signature="e#6969#7474#0#HTML" expanded="false" />
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#1;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -773,7 +774,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14712#14718#0#HTML" expanded="true" />
+            <element signature="e#14771#14777#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -934,7 +935,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finalassignmentapp/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
+        <state relative-caret-position="1716">
           <caret line="153" column="21" lean-forward="true" selection-start-line="153" selection-start-column="21" selection-end-line="153" selection-end-column="21" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
@@ -953,8 +954,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="117" column="41" lean-forward="true" selection-start-line="117" selection-start-column="41" selection-end-line="117" selection-end-column="41" />
+        <state relative-caret-position="411">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding>
             <element signature="e#1405#1708#0#HTML" expanded="false" />
             <element signature="e#2576#2908#0#HTML" expanded="false" />
@@ -965,7 +966,7 @@
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#6910#7415#0#HTML" expanded="false" />
+            <element signature="e#6969#7474#0#HTML" expanded="false" />
             <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#1;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#input#2;n#div#0;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -974,7 +975,7 @@
             <element signature="n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#0;n#form#0;n#div#2;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14712#14718#0#HTML" expanded="true" />
+            <element signature="e#14771#14777#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
