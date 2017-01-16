@@ -20,7 +20,7 @@ class Lists(models.Model):
     li_name = models.CharField(max_length=64, default='')
     li_username = models.CharField(max_length=64, default='')
 
-class Order(models.Model):
+class Orders(models.Model):
     or_product = models.CharField(max_length=256, default='')
     or_amount = models.CharField(max_length=256, default='')
     or_listid = models.IntegerField(default=0)
