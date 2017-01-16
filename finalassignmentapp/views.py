@@ -154,7 +154,7 @@ def userView(request):
                 'make_list_message': message,
                 'tab': 'lists',
                 'list_id': listid,
-                'list_orders': [],
+                #'list_orders': [],
             })
 
         elif command == "load_list":
